@@ -9,10 +9,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Talleye blog</h1>
+      <header className={styles.header}>
+        <h1 className={styles.h1}>Tall Eye</h1>
+      </header>
 
-        <p className={styles.description}>a paragraph</p>
+      <main className={styles.main}>
+        <p>Welcome to mega race</p>
       </main>
 
       <footer className={styles.footer}>A footer</footer>
