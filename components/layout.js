@@ -24,7 +24,7 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <SiteHeader myName={myName} />
+      <SiteHeader />
       <main className={styles.main}>{children}</main>
       <SiteFooter />
     </div>

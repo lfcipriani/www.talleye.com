@@ -1,8 +1,14 @@
-export default function SiteHeader({ myName }) {
+export default function SiteHeader() {
   return (
     <>
       <header>
-        <h1>{myName}</h1>
+        <h1>Luis Cipriani</h1>
+        <nav>
+          <ul>
+            <li>Articles</li>
+            <li>About</li>
+          </ul>
+        </nav>
       </header>
       <style jsx>
         {`
