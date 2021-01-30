@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "npx prettier --check . && npx eslint .",
     "lint": "eslint .",
-    "prelint": "npm run pretty",
-    "pretty": "prettier --write .",
+    "prettify": "prettier --write .",
     "postinstall": "husky install"
   },
   "dependencies": {
