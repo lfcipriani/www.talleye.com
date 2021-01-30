@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from './layout.module.css';
+import SiteHeader from './siteHeader';
+import SiteFooter from './siteFooter';
 
 export const siteTitle = 'Tall Eye';
 export const myName = 'Luis Cipriani';
@@ -22,13 +24,9 @@ export default function Layout({ children }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <header className={styles.header}>
-        <h1>{myName}</h1>
-      </header>
-
+      <SiteHeader myName={myName} />
       <main className={styles.main}>{children}</main>
-
-      <footer className={styles.footer}>A footer</footer>
+      <SiteFooter />
     </div>
   );
 }
