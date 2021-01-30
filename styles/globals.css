@@ -34,11 +34,14 @@ a img,
 :visited img {
   border: 0;
 }
+* {
+  box-sizing: border-box;
+}
 
 .code {
   font-family: var(--font-family-code);
 }
 
-.h1 {
+h1 {
   color: var(--color-text-heading);
 }
