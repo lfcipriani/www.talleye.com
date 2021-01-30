@@ -2,20 +2,20 @@ export default function SiteHeader() {
   return (
     <>
       <footer>
-        <div className="left">
-          <p>Tall Eye, a website by Luis Cipriani</p>
-          <p>Some terms apply</p>
-        </div>
-        <div className="right">
-          <p>RSS</p>
-          <p>Light/Dark theme</p>
-        </div>
+        <p>Tall Eye, a website by Luis Cipriani</p>
+        <p>Some terms apply</p>
+        <p>RSS</p>
+        <p>Light/Dark theme</p>
       </footer>
       <style jsx>
         {`
           footer {
             width: 100%;
             border-top: 1px solid #eaeaea;
+            padding: 10px;
+          }
+          p {
+            margin: 3px 0;
           }
         `}
       </style>
