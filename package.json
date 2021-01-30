@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "prelint": "npm run pretty",
-    "pretty": "prettier --write ."
+    "pretty": "prettier --write .",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "next": "10.0.5",
