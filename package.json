@@ -11,5 +11,18 @@
     "next": "10.0.5",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "arrowParens": "always",
+    "jsxSingleQuote": false,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "semi": true,
+    "trailingComma": "es5",
+    "endOfLine": "auto"
   }
 }
