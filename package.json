@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint .",
+    "pretty": "prettier --write ."
   },
   "dependencies": {
     "next": "10.0.5",
