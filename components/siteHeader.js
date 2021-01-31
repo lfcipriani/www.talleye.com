@@ -21,10 +21,10 @@ export default function SiteHeader() {
             align-items: flex-end;
           }
           h1 {
-            margin: 0 0 15px 0;
+            margin: 0 2rem 0 0;
           }
           nav {
-            margin: 0 0 15px 0;
+            margin-top: 1rem;
           }
           ul {
             list-style: none;
