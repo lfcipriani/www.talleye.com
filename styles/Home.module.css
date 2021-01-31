@@ -1,0 +1,30 @@
+.articleList {
+  margin: 1rem 0;
+}
+.bioText {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+.monthGroup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.monthGroup li {
+  margin: 2rem 0;
+}
+.month {
+  background-color: var(--color-text-highlight);
+  display: inline;
+  padding: 1px 5px;
+  font-size: 1.3rem;
+}
+.articleTitle {
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+}
+.articleDescription {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
