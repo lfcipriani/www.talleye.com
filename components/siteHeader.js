@@ -14,7 +14,7 @@ export default function SiteHeader() {
         {`
           header {
             width: 100%;
-            margin: 20px 0;
+            padding: 2rem 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;

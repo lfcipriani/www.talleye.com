@@ -12,7 +12,7 @@ export default function SiteHeader() {
           footer {
             width: 100%;
             border-top: 1px solid #eaeaea;
-            padding: 10px;
+            padding: 2rem 0;
           }
           p {
             margin: 3px 0;

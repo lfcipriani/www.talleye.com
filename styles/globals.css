@@ -1,17 +1,18 @@
 /* CSS variables */
 :root {
   /* Colors */
-  --color-bg-primary: white;
-  --color-bg-secondary: white;
-  --color-text-heading: blue;
-  --color-text-normal: black;
-  --color-text-accent: black;
+  --color-bg-primary: #eef0eb;
+  --color-bg-secondary: #fff3b0;
+  --color-text-heading: #153243;
+  --color-text-normal: #040e19;
+  --color-text-highlight: #3ddc97;
 
   /* Sizes */
 
   /* Fonts */
-  --font-family-main: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-family-heading: Lora, Helvetica Neue, sans-serif;
+  --font-family-normal: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-family-code: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -21,7 +22,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-family-main);
+  font-family: var(--font-family-normal);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-normal);
 }
 html {
   font-size: 1em;
@@ -42,6 +45,26 @@ a img,
   font-family: var(--font-family-code);
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-text-heading);
+  font-family: var(--font-family-heading);
+}
+
+/* My styles */
+.callout {
+  margin: 0 0 2rem;
+  padding: 20px 20px;
+  background-color: var(--color-bg-secondary);
+  border: 0px none;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.75);
 }

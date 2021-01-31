@@ -23,7 +23,8 @@
     "react/prop-types": "off",
     "prettier/prettier": "error",
     // needed for NextJS's jsx without react import
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/no-unescaped-entities": 0
   },
   "globals": { "React": "writable" }
 }
