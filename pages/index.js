@@ -16,13 +16,15 @@ export default function Home() {
           <h2 className={styles.month}>2019-01</h2>
           <ul>
             <li>
-              <h3 className={styles.articleTitle}>Title of the article</h3>
+              <a href="#" className={styles.articleTitle}>
+                <h3>Title of the article</h3>
+              </a>
               <p className={styles.articleDescription}>Description of the article.</p>
             </li>
             <li>
-              <h3 className={styles.articleTitle}>
-                Title of the article 2, that's very long my friend, maybe even longer than you.
-              </h3>
+              <a href="#" className={styles.articleTitle}>
+                <h3>Title of the article, a long one just as an example</h3>
+              </a>
               <p className={styles.articleDescription}>
                 Description of the article 2. <a href="#">Description of the article 2</a>,
                 Description of the article 2, Description of the article 2, Description of the
@@ -35,7 +37,9 @@ export default function Home() {
           <h2 className={styles.month}>2018-12</h2>
           <ul>
             <li>
-              <h3 className={styles.articleTitle}>Title of the article</h3>
+              <a href="#" className={styles.articleTitle}>
+                <h3>Title of the article</h3>
+              </a>
               <p className={styles.articleDescription}>Description of the article.</p>
             </li>
           </ul>
@@ -44,7 +48,12 @@ export default function Home() {
           <h2 className={styles.month}>2018-11</h2>
           <ul>
             <li>
-              <h3 className={styles.articleTitle}>Title of the article</h3>
+              <a href="#" className={styles.articleTitle}>
+                <h3>
+                  Title of the article, but the title is an article. Did you get it? hahahaha,
+                  that's nice my friend.
+                </h3>
+              </a>
               <p className={styles.articleDescription}>Description of the article.</p>
             </li>
           </ul>

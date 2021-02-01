@@ -20,9 +20,21 @@
   padding: 1px 5px;
   font-size: 1.3rem;
 }
-.articleTitle {
+a.articleTitle,
+a.articleTitle:visited {
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+a.articleTitle:hover,
+a.articleTitle:focus,
+a.articleTitle:active {
+  color: var(--color-text-hover);
+  text-decoration: underline;
+}
+.articleTitle h3 {
   font-size: 1.7rem;
   margin: 0.5rem 0;
+  display: inline;
 }
 .articleDescription {
   font-size: 1rem;
