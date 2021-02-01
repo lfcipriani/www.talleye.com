@@ -5,6 +5,8 @@
   --color-bg-secondary: #fff3b0;
   --color-text-heading: #153243;
   --color-text-normal: #040e19;
+  --color-text-link: #004c80;
+  --color-text-hover: #0067ac;
   --color-text-highlight: #3ddc97;
   --color-high-contrast: #000;
 
@@ -42,10 +44,6 @@ a img,
   box-sizing: border-box;
 }
 
-.code {
-  font-family: var(--font-family-code);
-}
-
 h1,
 h2,
 h3,
@@ -56,7 +54,23 @@ h6 {
   font-family: var(--font-family-heading);
 }
 
+a,
+a:visited {
+  color: var(--color-text-link);
+  text-decoration: underline;
+}
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-text-hover);
+  text-decoration: underline;
+}
+
 /* My styles */
+.code {
+  font-family: var(--font-family-code);
+}
+
 .callout {
   margin: 1rem 0;
   padding: 20px 20px;

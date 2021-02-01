@@ -24,9 +24,9 @@ export default function Home() {
                 Title of the article 2, that's very long my friend, maybe even longer than you.
               </h3>
               <p className={styles.articleDescription}>
-                Description of the article 2. Description of the article 2, Description of the
-                article 2, Description of the article 2, Description of the article 2, Description
-                of the article 2
+                Description of the article 2. <a href="#">Description of the article 2</a>,
+                Description of the article 2, Description of the article 2, Description of the
+                article 2, Description of the article 2
               </p>
             </li>
           </ul>

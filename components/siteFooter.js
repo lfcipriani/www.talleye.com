@@ -6,7 +6,13 @@ export default function SiteHeader() {
           <p>
             Tall Eye, a website by Luis Cipriani
             <br />
-            Some terms apply
+            <a
+              href="https://creativecommons.org/licenses/by-nc/4.0/"
+              target="_blank"
+              rel="noreferrer nofollow"
+            >
+              Some terms apply
+            </a>
             <br />
             Don't worry, you're not being tracked
           </p>

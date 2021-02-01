@@ -5,8 +5,9 @@ export default function SiteHeader() {
         <h1>Luis Cipriani</h1>
         <nav>
           <ul>
-            <li>Articles</li>
-            <li>About</li>
+            <li>
+              <a href="#">About</a>
+            </li>
           </ul>
         </nav>
       </header>
