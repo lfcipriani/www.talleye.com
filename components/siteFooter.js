@@ -28,7 +28,7 @@ export default function SiteHeader() {
                 height="35"
                 viewBox="0 0 256 256"
                 className="svgIcon"
-                ariaHidden="true"
+                aria-hidden="true"
                 focusable="false"
               >
                 <rect width="256" height="256" fill="none"></rect>
@@ -72,7 +72,7 @@ export default function SiteHeader() {
                 fill="#284B63"
                 viewBox="0 0 256 256"
                 className="svgIcon"
-                ariaHidden="true"
+                aria-hidden="true"
                 focusable="false"
               >
                 <rect width="256" height="256" fill="none"></rect>
@@ -105,7 +105,7 @@ export default function SiteHeader() {
                 fill="#0e1007"
                 viewBox="0 0 256 256"
                 className="svgIcon"
-                ariaHidden="true"
+                aria-hidden="true"
                 focusable="false"
               >
                 <rect width="256" height="256" fill="none"></rect>
