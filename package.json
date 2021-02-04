@@ -12,20 +12,24 @@
     "postinstall": "husky install"
   },
   "dependencies": {
+    "@mapbox/rehype-prism": "^0.5.0",
+    "gray-matter": "^4.0.2",
     "next": "10.0.5",
+    "prismjs": "^1.23.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "rehype-stringify": "^8.0.0",
+    "remark": "^13.0.0",
+    "remark-gfm": "^1.0.0",
+    "remark-rehype": "^8.0.0"
   },
   "devDependencies": {
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
-    "gray-matter": "^4.0.2",
     "husky": "^4.3.8",
-    "prettier": "2.2.1",
-    "remark": "^13.0.0",
-    "remark-html": "^13.0.1"
+    "prettier": "2.2.1"
   },
   "prettier": {
     "printWidth": 100,

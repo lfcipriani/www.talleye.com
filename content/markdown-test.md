@@ -35,7 +35,7 @@ Strong emphasis, aka bold, with **asterisks** or **underscores**.
 
 Combined emphasis with **asterisks and _underscores_**.
 
-Lorem ipsum dolor sit amet, [consectetur adipiscing elit](https://www.talleye.com), sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. **Ut enim ad minim veniam**, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. _Duis aute irure dolor in reprehenderit_ in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ==occaecat cupidatat non proident==, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, [consectetur adipiscing elit](https://www.talleye.com), sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. **Ut enim ad minim veniam**, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. _Duis aute irure dolor in reprehenderit_ in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ==occaecat cupidatat non proident==, sunt in <mark>culpa qui officia deserunt</mark> mollit anim id est laborum.
 
 ~~You can also strikeout texts.~~
 
@@ -93,6 +93,14 @@ Inline `code` has `back-ticks around` it.
 ```javascript
 var s = 'JavaScript syntax highlighting';
 alert(s);
+
+const processedContent = await remark()
+  .use(remark2rehype)
+  .use(rehypePrism)
+  .use(sanitize)
+  .use(stringify)
+  .process(matterResult.content);
+const contentHtml = processedContent.toString();
 ```
 
     Four spaces code style
@@ -196,3 +204,23 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 Pure markdown version:
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ARted4RniaU/0.jpg)](https://www.youtube.com/watch?v=ARted4RniaU)
+
+# GFM
+
+## Autolink literals
+
+www.example.com, https://example.com, and contact@example.com.
+
+## Strikethrough
+
+~one~ or ~~two~~ tildes.
+
+## Table
+
+| a   | b   |   c |  d  |
+| --- | :-- | --: | :-: |
+
+## Tasklist
+
+- [ ] to do
+- [x] done
