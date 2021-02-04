@@ -1,0 +1,71 @@
+.marquidaoum {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+/* Headers */
+.marquidaoum h1 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+.marquidaoum h2 {
+  font-size: 2.5rem;
+  margin: 1.2rem 0;
+}
+.marquidaoum h3 {
+  font-size: 2rem;
+  margin: 1.2rem 0;
+}
+.marquidaoum h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.marquidaoum h5 {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.marquidaoum h6 {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+/* Texts */
+.marquidaoum p {
+  font-size: 1.2rem;
+}
+
+/* Lists */
+.marquidaoum ul,
+.marquidaoum ol {
+  list-style-position: outside;
+  font-size: 1.2rem;
+}
+.marquidaoum ul p,
+.marquidaoum ol p,
+.marquidaoum ul li,
+.marquidaoum ol li {
+  margin: 0.3rem;
+}
+
+/* Code */
+/* Backticks code block are handled by prism */
+.marquidaoum code:not([class*='language-']) {
+  background-color: #2d2d2d;
+  color: #cccccc;
+  padding: 1px 4px;
+  font-size: 1rem;
+}
+.marquidaoum pre:not([class*='language-']) {
+  padding: 1em;
+  margin: 1.2rem 0;
+  display: block;
+  background-color: #2d2d2d;
+}
+.marquidaoum pre:not([class*='language-']) code:not([class*='language-']) {
+  padding: 0;
+  font-size: 1em;
+}
+.marquidaoum pre {
+  border-radius: 12px;
+  margin: 1.2rem 0;
+}

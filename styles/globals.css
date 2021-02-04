@@ -14,8 +14,7 @@
   --font-family-heading: Lora, Helvetica Neue, sans-serif;
   --font-family-normal: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  --font-family-code: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  --font-family-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 
 /* CSS reset */
@@ -63,7 +62,7 @@ a:active {
 }
 
 /* My styles */
-.code {
+code {
   font-family: var(--font-family-code);
 }
 .callout {

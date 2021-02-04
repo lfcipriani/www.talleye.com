@@ -4,7 +4,7 @@ import { getPostData } from '../lib/posts';
 export default function MdTest({ postData }) {
   return (
     <Layout>
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <div className="marquidaoum" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   );
 }
