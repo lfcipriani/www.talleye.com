@@ -59,8 +59,8 @@
 /* Code */
 /* Backticks code block are handled by prism */
 .marquidaoum code:not([class*='language-']) {
-  background-color: #2d2d2d;
-  color: #cccccc;
+  background-color: var(--color-text-code-bg);
+  color: var(--color-text-code);
   padding: 1px 4px;
   font-size: 1rem;
 }
@@ -68,7 +68,7 @@
   padding: 1em;
   margin: 1.2rem 0;
   display: block;
-  background-color: #2d2d2d;
+  background-color: var(--color-text-code-bg);
 }
 .marquidaoum pre:not([class*='language-']) code:not([class*='language-']) {
   padding: 0;
@@ -78,3 +78,5 @@
   border-radius: 12px;
   margin: 1.2rem 0;
 }
+
+/* Blockquotes, inherited from global.css */

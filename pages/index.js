@@ -4,13 +4,12 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <Layout>
-      <section className="callout">
+      <blockquote>
         <p className={styles.bioText}>
           I&apos;m Luis Cipriani and this is a collection of some interesting computer science
           projects I built and articles I wrote in the past.
         </p>
-        <p className={styles.bioText}>I'm married with Ieda, father of Bento.</p>
-      </section>
+      </blockquote>
       <section className={styles.articleList}>
         <div className={styles.monthGroup}>
           <h2 className={styles.month}>2019-01</h2>
