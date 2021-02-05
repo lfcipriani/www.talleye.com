@@ -11,6 +11,8 @@
   --color-high-contrast: #000;
   --color-text-code-bg: #2d2d2d;
   --color-text-code: #cccccc;
+  --color-table-bg: #fff;
+  --color-table-border: #ddd;
 
   /* Fonts */
   --font-family-heading: Lora, Helvetica Neue, sans-serif;

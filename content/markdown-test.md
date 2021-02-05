@@ -131,18 +131,18 @@ Quote break.
 
 Colons
 
-| Tables        |      Are      | Cool |
-| ------------- | :-----------: | ---: |
-| col 3 is      | right-aligned |      |
-| col 2 is      |   centered    |      |
-| zebra stripes |   are neat    |      |
+| Tables        |      Are      |          Cool |
+| ------------- | :-----------: | ------------: |
+| col 3 is      | right-aligned | right aligned |
+| col 2 is      |   centered    |            re |
+| zebra stripes |   are neat    |            re |
 
 Optional pipes
 
-| Markdown | Less      | Pretty     |
-| -------- | --------- | ---------- |
-| _Still_  | `renders` | **nicely** |
-| 1        | 2         | 3          |
+| Markdown | Less                                                                                                           | Pretty     |
+| -------- | -------------------------------------------------------------------------------------------------------------- | ---------- |
+| _Still_  | `renders`                                                                                                      | **nicely** |
+| 1        | a very long cell with a lot of content on it so we can check how much it work bla bla bla iuehfieufheifuheifuh | 3          |
 
 # HTML
 
