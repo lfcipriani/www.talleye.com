@@ -4,6 +4,15 @@
 }
 
 /* Headers */
+.marquidaoum h1,
+.marquidaoum h2,
+.marquidaoum h3,
+.marquidaoum h4,
+.marquidaoum h5,
+.marquidaoum h6 {
+  text-shadow: 4px 4px 4px rgba(255, 243, 176, 0.6);
+}
+
 .marquidaoum h1 {
   font-size: 3rem;
   margin: 1.5rem 0;
