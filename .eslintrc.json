@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "node": true,
-    "es2021": true
+    "es2021": true,
+    "jest/globals": true
   },
   "extends": ["eslint:recommended", "plugin:react/recommended", "prettier", "prettier/react"],
   "parserOptions": {
@@ -12,7 +13,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["react", "prettier", "jest"],
   "settings": {
     "react": {
       "version": "detect"
@@ -24,7 +25,13 @@
     "prettier/prettier": "error",
     // needed for NextJS's jsx without react import
     "react/react-in-jsx-scope": "off",
-    "react/no-unescaped-entities": 0
+    "react/no-unescaped-entities": 0,
+    // jest rules
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
   },
   "globals": { "React": "writable" }
 }
