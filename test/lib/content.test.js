@@ -1,4 +1,4 @@
-import { getPostData } from '../../lib/posts';
+import { getPostData } from '../../lib/content';
 
 describe('getPostData', () => {
   it('returns HTML version of markdown post', async () => {
