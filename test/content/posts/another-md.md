@@ -1,7 +1,7 @@
 ---
 title: Another markdown
 description: This post has all the formatting elements so we can work on markdown styles.
-datePublished: '2020-03-16T05:35:07.322Z'
+datePublished: '2021-01-01T00:00:00.000Z'
 author: Luis Cipriani
 tags: markdown, test
 image: /img/brook.jpg
