@@ -10,7 +10,7 @@
     "pretest": "npx prettier --check . && npx eslint .",
     "lint": "eslint .",
     "prettify": "prettier --write .",
-    "postinstall": "husky install"
+    "postinstall": "npx husky install"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.5.0",
