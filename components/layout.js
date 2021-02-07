@@ -3,24 +3,19 @@ import styles from './layout.module.css';
 import SiteHeader from './siteHeader';
 import SiteFooter from './siteFooter';
 
-export const siteTitle = 'Tall Eye';
-export const myName = 'Luis Cipriani';
-
 export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>
-          {myName} - {siteTitle}
-        </title>
+        <title>{process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye</title>
         <meta
           name="description"
-          content={siteTitle + ' is a website with my computer science articles and projects.'}
+          content={`Personal website of ${process.env.NEXT_PUBLIC_SITE_TITLE} with projects and articles about technology and computer science.`}
         />
-        <meta name="author" content={myName} />
+        <meta name="author" content={process.env.NEXT_PUBLIC_SITE_TITLE} />
+        <meta name="og:title" content={`${process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye`} />
         <meta property="og:image" content={''} />
-        <meta name="og:title" content={myName + ' - ' + siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
