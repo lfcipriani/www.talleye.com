@@ -1,5 +1,5 @@
 import Layout from '../../components/layout';
-import { getAllContentSlugs, getPostData } from '../../lib/content';
+import { getAllContentSlugs, getContentData } from '../../lib/content';
 
 export default function Post({ postData }) {
   return (
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.slug);
+  const postData = await getContentData('posts', params.slug);
   return {
     props: {
       postData,
