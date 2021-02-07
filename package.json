@@ -9,6 +9,7 @@
     "test": "jest",
     "lint": "eslint .",
     "prettify": "prettier --write .",
+    "ci": "npx prettier --check . && npx eslint . && npm run test",
     "postinstall": "npx husky install"
   },
   "dependencies": {
