@@ -27,3 +27,5 @@ Other checks:
 
     > npm run lint     # this will run eslint
     > npm run prettify # this will run prettier and write in all the files that need fixes
+
+Don't forget to configure your editor to run prettier on save. In VScode search for formatter on settings.

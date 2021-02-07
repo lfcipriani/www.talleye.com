@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "pretest": "npx prettier --check . && npx eslint .",
     "lint": "eslint .",
     "prettify": "prettier --write .",
     "postinstall": "npx husky install"
