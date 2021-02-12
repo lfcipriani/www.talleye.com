@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
+import Date from '../../components/date';
+import ReadingTime from '../../components/readingTime';
+import styles from '../../styles/Post.module.css';
 import { getAllContentSlugs, getContentData } from '../../lib/content';
 
 export default function Post({ postData }) {
@@ -12,14 +15,16 @@ export default function Post({ postData }) {
         <meta name="description" content={postData.description} />
         <meta name="keywords" content={postData.tags} />
         <meta name="author" content={postData.author} />
-        <meta name="og:title" content={`${postData.title}`} />
-        <meta property="og:image" content={''} />
+        <meta name="og:title" content={postData.title} />
+        <meta property="og:image" content={postData.image} />
       </Head>
       <article>
-        <header>
-          <h1 className="title">{postData.title}</h1>
-          <time dateTime={postData.datePublished}>{postData.datePublished}</time>
-          <p>3 min reading time</p>
+        <header className={styles.articleHeader}>
+          <h1 className={styles.title}>{postData.title}</h1>
+          <div className={styles.subHeader}>
+            <Date dateString={postData.datePublished} />
+            <ReadingTime minutes={postData.readingTime} />
+          </div>
         </header>
         <section
           className="marquidaoum"
