@@ -144,3 +144,13 @@ TODO list
   width: 1.2rem;
   height: 1.2rem;
 }
+
+/* Images */
+.marquidaoum img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+}

@@ -80,6 +80,14 @@ Some text to show that the reference links can follow later.
 
 # Images
 
+Full width image:
+
+![alt text](https://hackernoon.com/hn-images/1*iNuopBPG1Mr77jepxm_Ddw.png 'Logo Title Text 1')
+
+Image with a link:
+
+[![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')](https://www.google.com)
+
 Here's our logo (hover to see the title text):
 
 Inline-style:
