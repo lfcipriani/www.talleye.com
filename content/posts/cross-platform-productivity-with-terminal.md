@@ -7,8 +7,6 @@ tags: article, tool, terminal, macos, linux, platform
 image: https://www.talleye.com/images/crossplatform-productivity.jpg
 ---
 
-_Originally published on [Hackernoon](https://hackernoon.com/cross-platform-productivity-tool-with-terminal-7dd0487ead93#.z4ve1oeuo)_
-
 At work I use a Mac, at home I have a Lenovo notebook with [ArchLinux](https://www.archlinux.org/) installed. There's several reasons why people, and specially developers, adopt different platforms simultaneously and there's nothing wrong with that, in fact, we are just adopting the right tool for the right job… or budget.
 
 However, it can be annoying when you depend on productivity tools that are not available on all platforms. You also start to think twice before buying a license for a tool that won't be available on one of the platforms you adopt. Cross platform consistent user experience is hard, but we can find ways to solve this issue. This article will focus on how to improve the experience for one kind of tool:
@@ -19,7 +17,7 @@ The title above is my tentative to classify tools like [Mac Alfred](https://en.w
 
 ![](https://hackernoon.com/hn-images/1*iNuopBPG1Mr77jepxm_Ddw.png)
 
-Screenshot of Alfred in action.
+_Above a screenshot of Alfred in action._
 
 The way they work is simple. After a global keyboard shortcut is hit by the user, they can type commands to:
 
@@ -48,7 +46,7 @@ Usually I configure these terminals to hide when losing focus so you can have a 
 
 ![](https://hackernoon.com/hn-images/1*9qqGYtoQ4-8boMcQ25ubOA.png)
 
-Guake terminal screen on ArchLinux with a Timezone custom command I created
+_Above: Guake terminal screen on ArchLinux with a Timezone custom command I created._
 
 So far so good, we have a quick way of opening a Terminal, now we need a good set of commands and packages that reproduces the nice behavior we get with the other tools.
 
@@ -62,7 +60,7 @@ I have this file on my oh-my-zsh install (with a quite suggestive name):
 $ ~/.oh-my-zsh/custom/plugins/terminalfred/terminalfred.plugin.zsh
 ```
 
-All aliases and functions you add to that file will be available in your PATH when you open the terminal. In the next sections I'll show what I have on this file. If you are not patient, you can take a look on this [Gist](https://gist.github.com/lfcipriani/f6baa463fa1c600a5bf7ce3ecf764321#file-terminalfred-plugin-zsh).
+All aliases and functions you add to that file will be available in your `PATH` when you open the terminal. In the next sections I'll show what I have on this file. If you are not patient, you can take a look on this [Gist](https://gist.github.com/lfcipriani/f6baa463fa1c600a5bf7ce3ecf764321#file-terminalfred-plugin-zsh).
 
 What I also do is to keep that file on Dropbox and symlink to it from all machines I use. It's okay if you don't have any sensitive information in its content.
 
@@ -109,7 +107,7 @@ function terminalfred() {
 	else
 		url="${(j://:)${(s:/:)urls[$1]}[1,2]}"
 	fi
-	open\_command "$url"
+	open_command "$url"
 }
 ```
 
@@ -191,19 +189,19 @@ I use [Trello](https://www.trello.com) as task manager and I have a simple board
 
 ![](https://hackernoon.com/hn-images/1*1tsoRvpuJElmCsRWdSfj7A.png)
 
-Sample execution, now on Mac.
+_Above: Sample execution, now on Mac._
 
 Implementation is done using the [API](https://developers.trello.com/apis). I could have installed a Trello command line tool, but I decided to keep it simple and I have the following:
 
 ```shell
-alias tasks='curl -s -X GET -H "Cache-Control: no-cache" -H "Terminalfred" "[https://api.trello.com/1/lists/569623d6blablabla309c4d301?cards=open&card\_fields=name&fields=cards&key=\`cat](https://api.trello.com/1/lists/569623d660005cf309c4d301?cards=open&card_fields=name&fields=cards&key=`cat) ~/.secrets/trello.key.secret\`&token=\`cat ~/.secrets/trello.token.secret\`" | jq ".cards[].name"'
+alias tasks='curl -s -X GET -H "Cache-Control: no-cache" -H "Terminalfred" "https://api.trello.com/1/lists/569623d6blablabla309c4d301?cards=open&card_fields=name&fields=cards&key=`cat ~/.secrets/trello.key.secret`&token=`cat ~/.secrets/trello.token.secret`" | jq ".cards[].name"'
 
 function taskadd {
-    str="$\*"
+    str="$*"
     if [ -z "$str" ]; then
         echo usage: $0 task
     else
-        curl -s -X POST -H "Cache-Control: no-cache" --data-urlencode "name=${str}" -H "Terminalfred" "[https://api.trello.com/1/cards/?idList=569623d660blablablad301&key=\`cat](https://api.trello.com/1/cards/?idList=569623d660005cf309c4d301&key=`cat) ~/.secrets/trello.key.secret\`&token=\`cat ~/.secrets/trello.token.secret\`" | jq ".url"
+        curl -s -X POST -H "Cache-Control: no-cache" --data-urlencode "name=${str}" -H "Terminalfred" "https://api.trello.com/1/cards/?idList=569623d660blablablad301&key=`cat ~/.secrets/trello.key.secret`&token=`cat ~/.secrets/trello.token.secret`" | jq ".url"
     fi
 }
 ```
@@ -237,3 +235,5 @@ The main benefit is that you start the GUI app detached from terminal and avoidi
 If you achieved that point in the article I believe you get the point, we just scratched the surface of what can be done with a Terminal and basically there's no limit on what you can do to automate tasks and be more productive. You can find other tools I use, such as consulting timezones or finding files, in [**my plugin file**](https://gist.github.com/lfcipriani/f6baa463fa1c600a5bf7ce3ecf764321#file-terminalfred-plugin-zsh).
 
 Hope the lives of cross platform users are improved a little bit with that approach. As a last note, I purposely ignored Windows because I'm not an active user, but if you are able to have a similar setup using it let me know and I can update this article or link to yours.
+
+_This post was originally published on [Hackernoon](https://hackernoon.com/cross-platform-productivity-tool-with-terminal-7dd0487ead93#.z4ve1oeuo)._
