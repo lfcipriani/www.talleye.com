@@ -53,7 +53,7 @@ export default function ReadingTime({ minutes }) {
           }
           .icon line,
           .icon circle {
-            stroke: var(--color-text-link);
+            stroke: var(--color-text-normal);
           }
         `}
       </style>

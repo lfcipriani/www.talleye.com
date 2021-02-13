@@ -63,9 +63,6 @@ export default function Date({ dateString }) {
       <time dateTime={dateString}>{format(date, 'yyyy-MM-dd')}</time>
       <style jsx>
         {`
-          time {
-            margin-right: 10px;
-          }
           .icon {
             vertical-align: bottom;
             margin: 0;
@@ -73,7 +70,7 @@ export default function Date({ dateString }) {
           }
           .icon line,
           .icon rect[stroke] {
-            stroke: var(--color-text-link);
+            stroke: var(--color-text-normal);
           }
         `}
       </style>
