@@ -3,7 +3,7 @@ export default function SiteHeader() {
     <>
       <header>
         <a href="#" className="title">
-          <h1>Luis Cipriani</h1>
+          <h1>{process.env.NEXT_PUBLIC_SITE_TITLE}</h1>
         </a>
         <nav>
           <ul>
