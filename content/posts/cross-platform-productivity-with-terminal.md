@@ -4,7 +4,7 @@ description: If you work with multiple OSs simultaneously, this article may inte
 datePublished: '2017-02-07T00:00:00.000Z'
 author: Luis Cipriani
 tags: article, tool, terminal, macos, linux, platform
-image: https://www.talleye.com/images/crossplatform-productivity.jpg
+image: /img-posts/cppwt-alfred.png
 ---
 
 At work I use a Mac, at home I have a Lenovo notebook with [ArchLinux](https://www.archlinux.org/) installed. There's several reasons why people, and specially developers, adopt different platforms simultaneously and there's nothing wrong with that, in fact, we are just adopting the right tool for the right job… or budget.
@@ -15,7 +15,7 @@ However, it can be annoying when you depend on productivity tools that are not a
 
 The title above is my tentative to classify tools like [Mac Alfred](https://en.wikipedia.org/wiki/Alfred_%28software%29), [Ubuntu Unity Dash](https://en.wikipedia.org/wiki/Unity_%28user_interface%29#Dash), [Gnome Shell overview](https://en.wikipedia.org/wiki/GNOME) and [others](http://alternativeto.net/software/alfred/).
 
-![](https://hackernoon.com/hn-images/1*iNuopBPG1Mr77jepxm_Ddw.png)
+![](/img-posts/cppwt-alfred.png)
 
 _Above a screenshot of Alfred in action._
 
@@ -44,7 +44,7 @@ On Linux, I use [**Guake**](http://guake.org/) with `Super+space` shortcut.
 
 Usually I configure these terminals to hide when losing focus so you can have a better experience when executing a command that opens the browser, for example. You can also tweak the terminal fonts and color the way you want.
 
-![](https://hackernoon.com/hn-images/1*9qqGYtoQ4-8boMcQ25ubOA.png)
+![](/img-posts/cppwt-terminal.png)
 
 _Above: Guake terminal screen on ArchLinux with a Timezone custom command I created._
 
@@ -187,7 +187,7 @@ trev=’trans -v’                # view translation in terminal pager
 
 I use [Trello](https://www.trello.com) as task manager and I have a simple board to track my daily TODOs, tasks that I should be focusing during the day. Another wanted featured was to be able to add tasks easily to that board.
 
-![](https://hackernoon.com/hn-images/1*1tsoRvpuJElmCsRWdSfj7A.png)
+![](/img-posts/cppwt-trello.png)
 
 _Above: Sample execution, now on Mac._
 
