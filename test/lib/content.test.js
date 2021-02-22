@@ -7,8 +7,8 @@ describe('getSortedContentData', () => {
     expect(result['2020-11'][0].slug).toEqual('yet-another');
 
     expect(result['2021-01'][1].slug).toEqual('another-md');
-    expect(result['2021-01'][0].slug).toEqual('markdown-test');
-    expect(result['2021-01'][0].title).toEqual('Markdown test post');
+    expect(result['2021-01'][0].slug).toEqual('md-test-2');
+    expect(result['2021-01'][0].title).toEqual('Markdown test post 2');
     expect(result['2021-01'][0].tags).toEqual('markdown, test');
   });
 });
@@ -16,7 +16,7 @@ describe('getSortedContentData', () => {
 describe('getAllContentSlugs', () => {
   it('return all posts slugs under posts content folder', () => {
     const slugs = getAllContentSlugs('posts');
-    expect(slugs).toHaveLength(3);
+    expect(slugs).toHaveLength(4);
     expect(slugs[0].params.slug).toEqual('another-md');
     expect(slugs[1].params.slug).toEqual('markdown-test');
   });
