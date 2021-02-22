@@ -1,7 +1,9 @@
 import Layout from '../components/layout';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
+import { getSortedContentData } from '../lib/content';
 
-export default function Home() {
+export default function Home({ allPostsData }) {
   return (
     <Layout>
       <blockquote>
@@ -11,53 +13,33 @@ export default function Home() {
         </p>
       </blockquote>
       <section className={styles.articleList}>
-        <div className={styles.monthGroup}>
-          <h2 className={styles.month}>2019-01</h2>
-          <ul>
-            <li>
-              <a href="#" className={styles.articleTitle}>
-                <h3>Title of the article</h3>
-              </a>
-              <p className={styles.articleDescription}>Description of the article.</p>
-            </li>
-            <li>
-              <a href="#" className={styles.articleTitle}>
-                <h3>Title of the article, a long one just as an example</h3>
-              </a>
-              <p className={styles.articleDescription}>
-                Description of the article 2. <a href="#">Description of the article 2</a>,
-                Description of the article 2, Description of the article 2, Description of the
-                article 2, Description of the article 2
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.monthGroup}>
-          <h2 className={styles.month}>2018-12</h2>
-          <ul>
-            <li>
-              <a href="#" className={styles.articleTitle}>
-                <h3>Title of the article</h3>
-              </a>
-              <p className={styles.articleDescription}>Description of the article.</p>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.monthGroup}>
-          <h2 className={styles.month}>2018-11</h2>
-          <ul>
-            <li>
-              <a href="#" className={styles.articleTitle}>
-                <h3>
-                  Title of the article, but the title is an article. Did you get it? hahahaha,
-                  that's nice my friend.
-                </h3>
-              </a>
-              <p className={styles.articleDescription}>Description of the article.</p>
-            </li>
-          </ul>
-        </div>
+        {allPostsData.monthGroups.map((yearMonth) => (
+          <div className={styles.monthGroup} key={yearMonth}>
+            <h2 className={styles.month}>{yearMonth}</h2>
+            <ul>
+              {allPostsData[yearMonth].map(({ slug, title, description }) => (
+                <li key={slug}>
+                  <Link href={`/${allPostsData.type}/${slug}`}>
+                    <a className={styles.articleTitle}>
+                      <h3>{title}</h3>
+                    </a>
+                  </Link>
+                  <p className={styles.articleDescription}>{description}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedContentData('posts');
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }
