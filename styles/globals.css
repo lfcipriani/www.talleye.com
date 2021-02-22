@@ -1,3 +1,26 @@
+/* Font faces */
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/Lora-Regular.woff2');
+  src: local('Lora Regular'), local('Lora-Regular'),
+    url('/fonts/Lora-Regular.woff2') format('woff2'), url('/fonts/Lora-Regular.woff') format('woff'),
+    url('/fonts/Lora-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Lora-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/SourceSansPro-Regular.woff2');
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+    url('/fonts/SourceSansPro-Regular.woff2') format('woff2'),
+    url('/fonts/SourceSansPro-Regular.woff') format('woff'),
+    url('/fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* CSS variables */
 :root {
   /* Colors */
