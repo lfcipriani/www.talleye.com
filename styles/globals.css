@@ -1,11 +1,11 @@
 /* Font faces */
 @font-face {
   font-family: 'Lora';
-  src: url('/fonts/Lora-Regular.woff2');
-  src: local('Lora Regular'), local('Lora-Regular'),
-    url('/fonts/Lora-Regular.woff2') format('woff2'), url('/fonts/Lora-Regular.woff') format('woff'),
-    url('/fonts/Lora-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/Lora-Regular.ttf') format('truetype');
+  src: url('/fonts/Lora-Bold.woff2');
+  src: local('Lora Bold'), local('Lora-RegBoldular'), url('/fonts/Lora-Bold.woff2') format('woff2'),
+    url('/fonts/Lora-Bold.woff') format('woff'),
+    url('/fonts/Lora-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/Lora-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
