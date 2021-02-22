@@ -41,12 +41,12 @@ export default function SiteHeader() {
             text-decoration: none;
           }
           a.title:hover span {
-            text-shadow: 4px 4px 4px rgba(61, 220, 151, 0.8);
+            text-shadow: 4px 4px 4px var(--color-shadow-coper);
           }
           .title span {
             font-family: var(--font-family-heading);
             margin: 0 2rem 0 0;
-            text-shadow: 2px 2px 2px rgba(61, 220, 151, 0.6);
+            text-shadow: 2px 2px 2px var(--color-shadow-coper);
             font-weight: 700;
             font-size: 2rem;
             color: var(--color-text-heading);

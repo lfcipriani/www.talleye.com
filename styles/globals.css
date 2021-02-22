@@ -13,6 +13,9 @@
   --color-text-code: #cccccc;
   --color-table-bg: #fff;
   --color-table-border: #ddd;
+  --color-shadow-dark: rgba(0, 0, 0, 0.75);
+  --color-shadow-gold: rgba(255, 243, 176, 0.6);
+  --color-shadow-coper: rgba(61, 220, 151, 0.8);
 
   /* Fonts */
   --font-family-heading: Lora, Helvetica Neue, sans-serif;
@@ -79,9 +82,9 @@ blockquote {
   -moz-border-radius: 0 20px 20px 0;
   -webkit-border-radius: 0 20px 20px 0;
   font-style: italic;
-  box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 9px 0px var(--color-shadow-dark);
+  -webkit-box-shadow: 5px 5px 9px 0px var(--color-shadow-dark);
+  -moz-box-shadow: 5px 5px 9px 0px var(--color-shadow-dark);
 }
 .visually-hidden {
   border: 0;

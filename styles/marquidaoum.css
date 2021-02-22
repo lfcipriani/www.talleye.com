@@ -10,7 +10,7 @@
 .marquidaoum h4,
 .marquidaoum h5,
 .marquidaoum h6 {
-  text-shadow: 4px 4px 4px rgba(255, 243, 176, 0.6);
+  text-shadow: 4px 4px 4px var(--color-shadow-gold);
 }
 
 .marquidaoum h1 {
@@ -150,7 +150,7 @@ TODO list
   max-width: 100%;
   display: block;
   margin: auto;
-  box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
+  -webkit-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
+  -moz-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
 }
