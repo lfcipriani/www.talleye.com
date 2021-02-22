@@ -1,10 +1,18 @@
+import Link from 'next/link';
+
 export default function SiteHeader() {
   return (
     <>
       <footer>
         <div className="footerLeft">
           <p>
-            Tall Eye, a website by Luis Cipriani
+            <Link href="/">
+              <a>Tall Eye</a>
+            </Link>
+            , a website by{' '}
+            <Link href="/about">
+              <a>Luis Cipriani</a>
+            </Link>
             <br />
             <a
               href="https://creativecommons.org/licenses/by-nc/4.0/"
@@ -14,7 +22,7 @@ export default function SiteHeader() {
               Some terms apply
             </a>
             <br />
-            Don't worry, you're not being tracked
+            Your privacy is respected. We do not track you.
           </p>
         </div>
 
@@ -96,7 +104,7 @@ export default function SiteHeader() {
                 ></path>
               </svg>
             </a>
-            <a href="#" className="iconLink">
+            <a href="#top" className="iconLink">
               <span className="visually-hidden">Scroll to the top of the page</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

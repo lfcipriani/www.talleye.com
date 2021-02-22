@@ -5,7 +5,7 @@ export default function SiteHeader() {
     <>
       <header>
         <Link href="/">
-          <a className="title">
+          <a className="title" name="top">
             <span>{process.env.NEXT_PUBLIC_SITE_TITLE}</span>
           </a>
         </Link>
