@@ -1,14 +1,20 @@
+import Link from 'next/link';
+
 export default function SiteHeader() {
   return (
     <>
       <header>
-        <a href="#" className="title">
-          <h1>{process.env.NEXT_PUBLIC_SITE_TITLE}</h1>
-        </a>
+        <Link href="/">
+          <a className="title">
+            <span>{process.env.NEXT_PUBLIC_SITE_TITLE}</span>
+          </a>
+        </Link>
         <nav>
           <ul>
             <li>
-              <a href="#">About</a>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -34,13 +40,16 @@ export default function SiteHeader() {
             color: var(--color-text-hover);
             text-decoration: none;
           }
-          a.title:hover h1 {
+          a.title:hover span {
             text-shadow: 4px 4px 4px rgba(61, 220, 151, 0.8);
           }
-          .title h1 {
+          .title span {
+            font-family: var(--font-family-heading);
             margin: 0 2rem 0 0;
             text-shadow: 2px 2px 2px rgba(61, 220, 151, 0.6);
+            font-weight: 700;
             font-size: 2rem;
+            color: var(--color-text-heading);
           }
 
           nav {

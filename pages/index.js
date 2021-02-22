@@ -13,6 +13,7 @@ export default function Home({ allPostsData }) {
         </p>
       </blockquote>
       <section className={styles.articleList}>
+        <h1>All posts</h1>
         {allPostsData.monthGroups.map((yearMonth) => (
           <div className={styles.monthGroup} key={yearMonth}>
             <h2 className={styles.month}>{yearMonth}</h2>
