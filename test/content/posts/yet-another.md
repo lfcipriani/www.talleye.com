@@ -1,7 +1,7 @@
 ---
-title: Another markdown
-description: Another markdown post for you my friend.
-datePublished: '2021-01-01T00:00:00.000Z'
+title: Yet Another markdown post
+description: This post has all the formatting elements so we can work on markdown styles.
+datePublished: '2020-11-15T00:00:00.000Z'
 author: Luis Cipriani
 tags: markdown, test
 image: /img/brook.jpg
