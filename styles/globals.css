@@ -44,6 +44,9 @@
   --color-shadow-dark: rgba(0, 0, 0, 0.75);
   --color-shadow-heading: rgba(255, 243, 176, 0.6);
   --color-shadow-title: rgba(61, 220, 151, 0.8);
+  /* Filters */
+  --image-grayscale: 0;
+  --image-opacity: 100%;
 
   /* Fonts */
   --font-family-heading: Lora, 'Times New Roman', Times, serif;
@@ -75,6 +78,9 @@
     --color-shadow-dark: rgba(0, 0, 0, 0);
     --color-shadow-heading: rgba(255, 243, 176, 0.25);
     --color-shadow-title: rgba(95, 171, 221, 0.8);
+    /* Filters */
+    --image-grayscale: 20%;
+    --image-opacity: 75%;
   }
 }
 

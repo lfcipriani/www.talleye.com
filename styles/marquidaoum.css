@@ -153,4 +153,5 @@ TODO list
   -webkit-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
   -moz-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
   border-radius: 5px;
+  filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
 }
