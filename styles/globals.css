@@ -27,8 +27,10 @@
   --color-bg-primary: #eef0eb;
   --color-bg-secondary: #fff3b0;
   --color-text-heading: #153243;
+  --color-text-title: #153243;
+  --color-text-month: #153243;
   --color-border-separator: #153243;
-  --color-icon-footer: #153243;
+  --color-icon: #153243;
   --color-icon-subheader: #040e19;
   --color-text-subheader: #040e19;
   --color-text-normal: #040e19;
@@ -40,8 +42,8 @@
   --color-table-bg: #fff;
   --color-table-border: #ddd;
   --color-shadow-dark: rgba(0, 0, 0, 0.75);
-  --color-shadow-gold: rgba(255, 243, 176, 0.6);
-  --color-shadow-coper: rgba(61, 220, 151, 0.8);
+  --color-shadow-heading: rgba(255, 243, 176, 0.6);
+  --color-shadow-title: rgba(61, 220, 151, 0.8);
 
   /* Fonts */
   --font-family-heading: Lora, 'Times New Roman', Times, serif;
@@ -51,6 +53,29 @@
 }
 
 @media screen and (prefers-color-scheme: dark) {
+  :root {
+    /* Colors */
+    --color-bg-primary: #040e19;
+    --color-bg-secondary: #004c80;
+    --color-text-heading: #5fabdd;
+    --color-text-title: #eef0eb;
+    --color-text-month: #000;
+    --color-border-separator: #153243;
+    --color-icon: #fff3b0;
+    --color-icon-subheader: #040e19;
+    --color-text-subheader: #040e19;
+    --color-text-normal: #eef0eb;
+    --color-text-link: #fff3b0;
+    --color-text-hover: #ffd900;
+    --color-text-highlight: #3ddc97;
+    --color-text-code-bg: #2d2d2d;
+    --color-text-code: #cccccc;
+    --color-table-bg: #000;
+    --color-table-border: #222;
+    --color-shadow-dark: rgba(0, 0, 0, 0);
+    --color-shadow-heading: rgba(255, 243, 176, 0.25);
+    --color-shadow-title: rgba(95, 171, 221, 0.8);
+  }
 }
 
 /* CSS reset */

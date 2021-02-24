@@ -10,7 +10,7 @@
 .marquidaoum h4,
 .marquidaoum h5,
 .marquidaoum h6 {
-  text-shadow: 4px 4px 4px var(--color-shadow-gold);
+  text-shadow: 4px 4px 4px var(--color-shadow-heading);
 }
 
 .marquidaoum h1 {
@@ -152,4 +152,5 @@ TODO list
   box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
   -webkit-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
   -moz-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
+  border-radius: 5px;
 }

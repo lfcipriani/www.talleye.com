@@ -16,6 +16,7 @@
 }
 .month {
   background-color: var(--color-text-highlight);
+  color: var(--color-text-month);
   display: inline;
   padding: 1px 5px;
   font-size: 1.3rem;

@@ -41,15 +41,15 @@ export default function SiteHeader() {
             text-decoration: none;
           }
           a.title:hover span {
-            text-shadow: 4px 4px 4px var(--color-shadow-coper);
+            text-shadow: 4px 4px 4px var(--color-shadow-title);
           }
           .title span {
             font-family: var(--font-family-heading);
             margin: 0 2rem 0 0;
-            text-shadow: 2px 2px 2px var(--color-shadow-coper);
+            text-shadow: 2px 2px 2px var(--color-shadow-title);
             font-weight: 700;
             font-size: 2rem;
-            color: var(--color-text-heading);
+            color: var(--color-text-title);
           }
 
           nav {

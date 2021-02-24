@@ -2,7 +2,7 @@
   width: 100%;
 }
 .title {
-  text-shadow: 4px 4px 4px var(--color-shadow-gold);
+  text-shadow: 4px 4px 4px var(--color-shadow-heading);
   font-size: 3rem;
   margin: 1.5rem 0 0.5rem;
 }
