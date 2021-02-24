@@ -155,7 +155,7 @@ export default function SiteHeader() {
         {`
           footer {
             width: 100%;
-            border-top: 2px solid var(--color-text-heading);
+            border-top: 2px solid var(--color-border-separator);
             padding: 2rem 0;
             display: flex;
             flex-wrap: wrap;
@@ -166,16 +166,15 @@ export default function SiteHeader() {
             margin: 3px 0;
             font-weight: 200;
             font-size: 0.8rem;
-            color: var(--color-high-contrast);
           }
           .iconLink + .iconLink {
             margin-left: 10px;
           }
           .stroke {
-            stroke: var(--color-text-heading);
+            stroke: var(--color-icon);
           }
           .fill {
-            fill: var(--color-text-heading);
+            fill: var(--color-icon);
           }
         `}
       </style>

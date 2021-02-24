@@ -1,6 +1,6 @@
 .articleHeader {
   width: 100%;
-  border-bottom: 2px solid var(--color-text-heading);
+  border-bottom: 2px solid var(--color-border-separator);
 }
 .title {
   text-shadow: 4px 4px 4px var(--color-shadow-gold);
@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: flex-start;
   font-size: 1.3rem;
-  color: var(--color-text-normal);
+  color: var(--color-text-subheader);
 }
 .subHeader p {
   padding: 3px 5px;

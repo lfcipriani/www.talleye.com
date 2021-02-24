@@ -70,7 +70,7 @@ export default function Date({ dateString }) {
           }
           .icon line,
           .icon rect[stroke] {
-            stroke: var(--color-text-normal);
+            stroke: var(--color-icon-subheader);
           }
         `}
       </style>
