@@ -1,5 +1,5 @@
 import fs from 'fs';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { getGroupedContentMetadata } from '../lib/content';

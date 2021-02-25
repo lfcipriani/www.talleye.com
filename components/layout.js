@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import styles from './layout.module.css';
-import SiteHeader from './siteHeader';
-import SiteFooter from './siteFooter';
+import styles from './Layout.module.css';
+import SiteHeader from './SiteHeader';
+import SiteFooter from './SiteFooter';
 
 export default function Layout({ children }) {
   return (

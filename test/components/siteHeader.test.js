@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import SiteHeader from '../../components/siteHeader';
+import SiteHeader from '../../components/SiteHeader';
 
 test('renders website title from config', () => {
   render(<SiteHeader />);
