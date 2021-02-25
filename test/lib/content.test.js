@@ -41,8 +41,9 @@ describe('getAllContentSlugs', () => {
 
 describe('getContentData', () => {
   it('returns HTML version of markdown post', async () => {
-    const result = await getContentData('posts', 'markdown-test');
+    const result = await getContentData('posts', 'md-test-2');
     expect(result.contentHtml).toMatch(/<h1>Hello!/);
+    expect(result.contentHtml).toMatch(/src="\/icon48.png/);
   });
 
   it('returns slug and content metadata', async () => {
@@ -50,5 +51,11 @@ describe('getContentData', () => {
     expect(result.slug).toEqual('markdown-test');
     expect(result.title).toEqual('Markdown test post');
     expect(result.tags).toEqual('markdown, test');
+  });
+
+  it('converts img urls to absolute path in case it is a RSS feed', async () => {
+    const result = await getContentData('posts', 'md-test-2', true);
+    expect(result.contentHtml).toMatch(/src="https:\/\/.+\/icon48.png/);
+    expect(result.contentHtml).not.toMatch(/src="https:\/\/.+http.+\/icon48.png/);
   });
 });

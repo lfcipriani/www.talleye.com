@@ -12,6 +12,7 @@
     "ci": "npx prettier --check . && eslint . && jest --silent"
   },
   "dependencies": {
+    "@jsdevtools/rehype-url-inspector": "^2.0.2",
     "@mapbox/rehype-prism": "^0.5.0",
     "date-fns": "^2.17.0",
     "gray-matter": "^4.0.2",
