@@ -1,9 +1,26 @@
-import { getAllContentSlugs, getContentData, getSortedContentData } from '../../lib/content';
+import {
+  getContentMetadata,
+  getAllContentSlugs,
+  getContentData,
+  getGroupedContentMetadata,
+} from '../../lib/content';
 
-describe('getSortedContentData', () => {
+describe('getContentMetadata', () => {
   it('return sorted list of slugs and metadata, ordered by most recent', () => {
-    const result = getSortedContentData('posts');
+    const result = getContentMetadata('posts');
+    expect(result).toHaveLength(4);
+    expect(result[3].slug).toEqual('yet-another');
+    expect(result[2].slug).toEqual('another-md');
+    expect(result[1].slug).toEqual('markdown-test');
+    expect(result[0].slug).toEqual('md-test-2');
+  });
+});
+
+describe('getGroupedContentMetadata', () => {
+  it('return sorted list of slugs and metadata, grouped by year and month', () => {
+    const result = getGroupedContentMetadata('posts');
     expect(result.monthGroups).toHaveLength(2);
+    expect(result.monthGroups[0]).toEqual('2021-01');
     expect(result['2020-11'][0].slug).toEqual('yet-another');
 
     expect(result['2021-01'][1].slug).toEqual('another-md');

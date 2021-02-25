@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
-import { getSortedContentData } from '../lib/content';
+import { getGroupedContentMetadata } from '../lib/content';
 
 export default function Home({ allPostsData }) {
   return (
@@ -37,7 +37,7 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedContentData('posts');
+  const allPostsData = getGroupedContentMetadata('posts');
   return {
     props: {
       allPostsData,
