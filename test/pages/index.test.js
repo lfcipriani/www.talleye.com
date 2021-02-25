@@ -13,7 +13,7 @@ test('render the index page with content list', async () => {
   const allPostsData = await getGroupedContentMetadata('posts');
   const { getByText } = render(<Home allPostsData={allPostsData} />);
   expect(allPostsData.type).toEqual('posts');
-  var element = getByText(/Markdown test post/);
+  var element = getByText(/Markdown test post 2/);
   expect(element).toBeInTheDocument();
   element = getByText(/Another markdown post for you my friend/);
   expect(element).toBeInTheDocument();

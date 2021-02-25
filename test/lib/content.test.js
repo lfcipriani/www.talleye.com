@@ -8,10 +8,10 @@ import {
 describe('getContentMetadata', () => {
   it('return sorted list of slugs and metadata, ordered by most recent', () => {
     const result = getContentMetadata('posts');
-    expect(result).toHaveLength(4);
-    expect(result[3].slug).toEqual('yet-another');
-    expect(result[2].slug).toEqual('another-md');
-    expect(result[1].slug).toEqual('markdown-test');
+    console.log(result);
+    expect(result).toHaveLength(3);
+    expect(result[2].slug).toEqual('yet-another');
+    expect(result[1].slug).toEqual('another-md');
     expect(result[0].slug).toEqual('md-test-2');
   });
 });

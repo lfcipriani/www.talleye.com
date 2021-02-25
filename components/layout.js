@@ -9,10 +9,7 @@ export default function Layout({ children }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>{process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye</title>
-        <meta
-          name="description"
-          content={`Personal website of ${process.env.NEXT_PUBLIC_SITE_TITLE} with projects and articles about technology and computer science.`}
-        />
+        <meta name="description" content={process.env.NEXT_PUBLIC_SITE_DESCRIPTION} />
         <meta name="author" content={process.env.NEXT_PUBLIC_SITE_TITLE} />
         <meta name="og:title" content={`${process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye`} />
         <meta property="og:image" content={''} />
