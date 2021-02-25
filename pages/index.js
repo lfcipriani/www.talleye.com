@@ -1,7 +1,9 @@
+import fs from 'fs';
 import Layout from '../components/layout';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { getGroupedContentMetadata } from '../lib/content';
+import { generateRSS } from '../lib/rssGen';
 
 export default function Home({ allPostsData }) {
   return (
@@ -37,7 +39,15 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getGroupedContentMetadata('posts');
+  const type = 'posts';
+
+  if (process.env.NODE_ENV !== 'test') {
+    const path = `${process.cwd()}/public/${type}-rss.xml`;
+    const rssFeed = await generateRSS(type);
+    fs.writeFileSync(path, rssFeed, 'utf8');
+  }
+
+  const allPostsData = getGroupedContentMetadata(type);
   return {
     props: {
       allPostsData,

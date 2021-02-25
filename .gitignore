@@ -74,3 +74,6 @@ typings/
 
 # vercel
 .vercel
+
+# talleye.com
+/public/*.xml

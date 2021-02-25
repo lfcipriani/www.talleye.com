@@ -14,6 +14,12 @@ export default function Layout({ children }) {
         <meta name="og:title" content={`${process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye`} />
         <meta property="og:image" content={''} />
         <meta name="twitter:card" content="summary_large_image" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          href={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}/posts-rss.xml`}
+          title="Luis Cipriani's RSS Feed - Tall Eye"
+        ></link>
       </Head>
 
       <SiteHeader />
