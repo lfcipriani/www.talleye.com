@@ -4,6 +4,7 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { getGroupedContentMetadata } from '../lib/content';
 import { generateRSS } from '../lib/rssGen';
+import { generateSitemap } from '../lib/sitemap';
 
 export default function Home({ allPostsData }) {
   return (
@@ -45,6 +46,10 @@ export async function getStaticProps() {
     const path = `${process.cwd()}/public/${type}-rss.xml`;
     const rssFeed = await generateRSS(type);
     fs.writeFileSync(path, rssFeed, 'utf8');
+    console.log('Generated RSS feed.');
+
+    generateSitemap();
+    console.log('Generated sitemap.xml.');
   }
 
   const allPostsData = getGroupedContentMetadata(type);

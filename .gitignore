@@ -77,3 +77,4 @@ typings/
 
 # talleye.com
 /public/*.xml
+/public/*.xml.gz
