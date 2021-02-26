@@ -59,7 +59,7 @@ or
 - you can restrict the search to a specific source by using the hashtag with source name
 - if no music #source is specified, it will play the first result found on Spotify, then Youtube, then Soundcloud
 
-A pre-configured admin user can send DM messages to jukebos user to #play, #pause, #next (skip song).
+A pre-configured admin user can send DM messages to jukebox user to #play, #pause, #next (skip song).
 
 ## Hardware
 
