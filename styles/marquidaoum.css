@@ -68,6 +68,7 @@
   padding: 1em;
   margin: 1.2rem 0;
   display: block;
+  overflow: auto;
   background-color: var(--color-text-code-bg);
 }
 .marquidaoum pre:not([class*='language-']) code:not([class*='language-']) {
