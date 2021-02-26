@@ -1,6 +1,6 @@
 ---
 title: Cross platform productivity with Terminal
-description: If you work with multiple OSs simultaneously, this article may interest you.
+description: A proposal on how to keep your productivity up when you use different operating systems simultaneously.
 datePublished: '2017-02-07T00:00:00.000Z'
 author: Luis Cipriani
 tags: article, tool, terminal, macos, linux, platform
