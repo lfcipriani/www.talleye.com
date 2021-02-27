@@ -16,7 +16,10 @@ export default function Post({ postData }) {
         <meta name="keywords" content={postData.tags} />
         <meta name="author" content={postData.author} />
         <meta name="og:title" content={postData.title} />
-        <meta property="og:image" content={`https://${{process.env.NEXT_PUBLIC_SITE_TITLE}}/${postData.image}`} />
+        <meta
+          property="og:image"
+          content={`https://${process.env.NEXT_PUBLIC_SITE_TITLE}/${postData.image}`}
+        />
       </Head>
       <article>
         <header className={styles.articleHeader}>
