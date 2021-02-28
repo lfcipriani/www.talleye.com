@@ -26,28 +26,14 @@ export default function FourOhFour() {
             </Link>{' '}
             to find other posts or you can watch me playing piano 😁.
           </p>
-          <div className="video">
+          <div className="media">
             <iframe
+              className="media-asset"
               src="https://www.youtube-nocookie.com/embed/yqzeiLg-F9g"
               frameBorder="0"
               allowFullScreen
             ></iframe>
           </div>
-          <style jsx>{`
-            .video {
-              position: relative;
-              width: 100%;
-              padding-bottom: 56.25%;
-            }
-            .video iframe {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              border: 0;
-            }
-          `}</style>
         </section>
       </article>
     </Layout>
