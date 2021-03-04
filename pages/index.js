@@ -11,8 +11,17 @@ export default function Home({ allPostsData }) {
     <Layout>
       <blockquote>
         <p className={styles.bioText}>
-          I&apos;m Luis Cipriani and this is a collection of some interesting computer science
-          projects I built and articles I wrote in the past.
+          I'm{' '}
+          <Link href="https://twitter.com/lfcipriani">
+            <a>Luis Cipriani</a>
+          </Link>
+          and a long time ago I developed a strong interest in technology and software development.
+          Some of the projects I built or articles I wrote are shared in this website and I hope
+          they are useful for you as much as I had fun making them. I also work as CTO at{' '}
+          <Link href="https://www.beat81.com">
+            <a>Beat81</a>
+          </Link>
+          .
         </p>
       </blockquote>
       <section className={styles.articleList}>
