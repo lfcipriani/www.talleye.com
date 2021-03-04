@@ -1,6 +1,6 @@
 ---
 title: The 4 basic flows of HTTP Caching
-description: An illustrated introduction to HTTP and API Caching in general
+description: An illustrated introduction to HTTP and API Caching in general.
 datePublished: '2013-11-03T00:00:00Z'
 author: Luis Cipriani
 tags: architecture, web, api, performance, caching

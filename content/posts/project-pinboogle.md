@@ -1,6 +1,6 @@
 ---
 title: 'Project: Pinboogle'
-description: A search playground with Pinboard web scraping and Solr search engine deployed on docker containers
+description: A search playground with Pinboard web scraping and Solr search engine deployed on docker containers.
 datePublished: '2016-11-12T00:00:00Z'
 author: Luis Cipriani
 tags: code, architecture, python, web, tool

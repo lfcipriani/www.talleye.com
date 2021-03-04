@@ -1,6 +1,6 @@
 ---
 title: Fearless HTTP requests abuse
-description: Because your servers deserve some rest
+description: Because your servers deserve some rest.
 datePublished: '2011-11-26T00:00:00Z'
 author: Luis Cipriani
 tags: architecture, web, api, performance, talk, abril
