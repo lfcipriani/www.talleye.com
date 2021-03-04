@@ -5,7 +5,7 @@ import { getGroupedContentMetadata } from '../../lib/content';
 test('render the index page with mini bio', async () => {
   const allPostsData = await getGroupedContentMetadata('posts');
   const { getByText } = render(<Home allPostsData={allPostsData} />);
-  const element = getByText(/Luis Cipriani/);
+  const element = getByText(/art, technology, computer science and software development/);
   expect(element).toBeInTheDocument();
 });
 
