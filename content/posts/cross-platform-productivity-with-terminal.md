@@ -16,7 +16,6 @@ However, it can be annoying when you depend on productivity tools that are not a
 The title above is my tentative to classify tools like [Mac Alfred](https://en.wikipedia.org/wiki/Alfred_%28software%29), [Ubuntu Unity Dash](https://en.wikipedia.org/wiki/Unity_%28user_interface%29#Dash), [Gnome Shell overview](https://en.wikipedia.org/wiki/GNOME) and [others](http://alternativeto.net/software/alfred/).
 
 ![](/img-posts/cppwt-alfred.png)
-
 _Above a screenshot of Alfred in action._
 
 The way they work is simple. After a global keyboard shortcut is hit by the user, they can type commands to:
@@ -45,7 +44,6 @@ On Linux, I use [**Guake**](http://guake.org/) with `Super+space` shortcut.
 Usually I configure these terminals to hide when losing focus so you can have a better experience when executing a command that opens the browser, for example. You can also tweak the terminal fonts and color the way you want.
 
 ![](/img-posts/cppwt-terminal.png)
-
 _Above: Guake terminal screen on ArchLinux with a Timezone custom command I created._
 
 So far so good, we have a quick way of opening a Terminal, now we need a good set of commands and packages that reproduces the nice behavior we get with the other tools.
@@ -188,7 +186,6 @@ trev=’trans -v’                # view translation in terminal pager
 I use [Trello](https://www.trello.com) as task manager and I have a simple board to track my daily TODOs, tasks that I should be focusing during the day. Another wanted featured was to be able to add tasks easily to that board.
 
 ![](/img-posts/cppwt-trello.png)
-
 _Above: Sample execution, now on Mac._
 
 Implementation is done using the [API](https://developers.trello.com/apis). I could have installed a Trello command line tool, but I decided to keep it simple and I have the following:

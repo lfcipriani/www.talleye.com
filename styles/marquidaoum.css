@@ -149,7 +149,7 @@ TODO list
 .marquidaoum img {
   max-width: 100%;
   display: block;
-  margin: auto;
+  margin: 10px auto;
   box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
   -webkit-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
   -moz-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
