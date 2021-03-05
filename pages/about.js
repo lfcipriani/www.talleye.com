@@ -31,8 +31,8 @@ export default function About() {
           </p>
           <p>
             Currently working as CTO at Beat81, a fittech startup in Berlin. Previously worked at
-            Twitter, Rocket Internet, Abril Digital, and other startups between early and series B
-            stages as software engineer, developer advocate, product manager or engineering manager.
+            Twitter, Rocket Internet, Abril Digital, and startups between early and series B stages
+            as software engineer, developer advocate, product manager or engineering manager.
           </p>
           <p>
             Also worked in a diverse set of industries such as finance, news, social, vc incubators,
@@ -57,16 +57,6 @@ export default function About() {
             <li>
               <Link href="https://www.linkedin.com/in/luiscipriani/">
                 <a target="_blank">Linkedin</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://soundcloud.com/lfcipriani">
-                <a target="_blank">Soundcloud</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="https://stackoverflow.com/users/50882/cipriani">
-                <a target="_blank">Stack Overflow</a>
               </Link>
             </li>
           </ul>

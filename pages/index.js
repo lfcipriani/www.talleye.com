@@ -14,10 +14,10 @@ export default function Home({ allPostsData }) {
           I'm{' '}
           <Link href="https://twitter.com/lfcipriani">
             <a>Luis Cipriani</a>
-          </Link>{' '}
-          and I fancy art, technology, computer science and software development. Some of the
-          projects I built or articles I wrote are shared in this website and I hope they are useful
-          for you as much as I had fun making them. I also work as CTO at{' '}
+          </Link>
+          , software engineer and engineering manager. This website is a collection of some projects
+          I built or articles I wrote about technology and software dev. I hope they are useful for
+          you as much as I had fun making them. I also work as CTO at{' '}
           <Link href="https://www.beat81.com">
             <a>Beat81</a>
           </Link>
