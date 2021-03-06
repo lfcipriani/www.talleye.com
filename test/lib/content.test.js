@@ -9,7 +9,7 @@ describe('getContentMetadata', () => {
   it('return sorted list of slugs and metadata, ordered by most recent', () => {
     const result = getContentMetadata('posts');
     console.log(result);
-    expect(result).toHaveLength(3);
+    expect(result).toHaveLength(4);
     expect(result[2].slug).toEqual('yet-another');
     expect(result[1].slug).toEqual('another-md');
     expect(result[0].slug).toEqual('md-test-2');
@@ -19,7 +19,7 @@ describe('getContentMetadata', () => {
 describe('getGroupedContentMetadata', () => {
   it('return sorted list of slugs and metadata, grouped by year and month', () => {
     const result = getGroupedContentMetadata('posts');
-    expect(result.monthGroups).toHaveLength(2);
+    expect(result.monthGroups).toHaveLength(3);
     expect(result.monthGroups[0]).toEqual('2021-01');
     expect(result['2020-11'][0].slug).toEqual('yet-another');
 
@@ -33,7 +33,7 @@ describe('getGroupedContentMetadata', () => {
 describe('getAllContentSlugs', () => {
   it('return all posts slugs under posts content folder', () => {
     const slugs = getAllContentSlugs('posts');
-    expect(slugs).toHaveLength(4);
+    expect(slugs).toHaveLength(5);
     expect(slugs[0].params.slug).toEqual('another-md');
     expect(slugs[1].params.slug).toEqual('markdown-test');
   });
@@ -51,6 +51,13 @@ describe('getContentData', () => {
     expect(result.slug).toEqual('markdown-test');
     expect(result.title).toEqual('Markdown test post');
     expect(result.tags).toEqual('markdown, test');
+  });
+
+  it('returns content in a different language', async () => {
+    const result = await getContentData('posts', 'portuguese-post');
+    expect(result.slug).toEqual('portuguese-post');
+    expect(result.title).toEqual('Olá Mundo!');
+    expect(result.lang).toEqual('pt-BR');
   });
 
   it('converts img urls to absolute path in case it is a RSS feed', async () => {

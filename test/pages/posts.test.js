@@ -21,3 +21,12 @@ test('renders post content', async () => {
   element = getByText(/4 min/);
   expect(element).toBeInTheDocument();
 });
+
+test('render a language hint when the content is not in Engllish', async () => {
+  const postData = await getContentData('posts', 'portuguese-post');
+  const { getByText } = render(<Post postData={postData} />);
+  var element = getByText(/Olá Mundo!/);
+  expect(element).toBeInTheDocument();
+  element = getByText(/Portuguese/);
+  expect(element).toBeInTheDocument();
+});

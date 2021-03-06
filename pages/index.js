@@ -1,5 +1,6 @@
 import fs from 'fs';
 import Layout from '../components/Layout';
+import Language from '../components/Language';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { getGroupedContentMetadata } from '../lib/content';
@@ -30,14 +31,17 @@ export default function Home({ allPostsData }) {
           <div className={styles.monthGroup} key={yearMonth}>
             <h2 className={styles.month}>{yearMonth}</h2>
             <ul>
-              {allPostsData[yearMonth].map(({ slug, title, description }) => (
+              {allPostsData[yearMonth].map(({ slug, title, description, lang }) => (
                 <li key={slug}>
                   <Link href={`/${allPostsData.type}/${slug}`}>
                     <a className={styles.articleTitle}>
                       <h3>{title}</h3>
                     </a>
                   </Link>
-                  <p className={styles.articleDescription}>{description}</p>
+                  <p className={styles.articleDescription}>
+                    {lang !== undefined && <Language lang={lang} />}
+                    {description}
+                  </p>
                 </li>
               ))}
             </ul>

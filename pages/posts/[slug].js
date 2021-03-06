@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../../components/Layout';
 import Date from '../../components/Date';
 import ReadingTime from '../../components/ReadingTime';
+import Language from '../../components/Language';
 import styles from '../../styles/Post.module.css';
 import { getAllContentSlugs, getContentData } from '../../lib/content';
 
@@ -18,12 +19,17 @@ export default function Post({ postData }) {
         <meta name="og:title" content={postData.title} />
         <meta
           property="og:image"
-          content={`https://${process.env.NEXT_PUBLIC_SITE_TITLE}/${postData.image}`}
+          content={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}/${postData.image}`}
         />
       </Head>
       <article>
         <header className={styles.articleHeader}>
           <h1 className={styles.title}>{postData.title}</h1>
+          {postData.lang !== undefined && (
+            <p className={styles.articleDescription}>
+              <Language lang={postData.lang} />
+            </p>
+          )}
           <div className={styles.subHeader}>
             <Date dateString={postData.datePublished} />
             <ReadingTime minutes={postData.readingTime} />
