@@ -33,7 +33,7 @@ export default function Home({ allPostsData }) {
             <ul>
               {allPostsData[yearMonth].map(({ slug, title, description, lang }) => (
                 <li key={slug}>
-                  <Link href={`/${allPostsData.type}/${slug}`}>
+                  <Link href={`/${allPostsData.type}/${slug}`} locale={lang !== undefined && lang}>
                     <a className={styles.articleTitle}>
                       <h3>{title}</h3>
                     </a>

@@ -8,7 +8,6 @@ import {
 describe('getContentMetadata', () => {
   it('return sorted list of slugs and metadata, ordered by most recent', () => {
     const result = getContentMetadata('posts');
-    console.log(result);
     expect(result).toHaveLength(4);
     expect(result[2].slug).toEqual('yet-another');
     expect(result[1].slug).toEqual('another-md');
@@ -36,6 +35,13 @@ describe('getAllContentSlugs', () => {
     expect(slugs).toHaveLength(5);
     expect(slugs[0].params.slug).toEqual('another-md');
     expect(slugs[1].params.slug).toEqual('markdown-test');
+  });
+
+  it('return also the locale for non English posts', () => {
+    const slugs = getAllContentSlugs('posts');
+    expect(slugs).toHaveLength(5);
+    expect(slugs[3].params.slug).toEqual('portuguese-post');
+    expect(slugs[3].locale).toEqual('pt-BR');
   });
 });
 

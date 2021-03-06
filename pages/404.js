@@ -21,7 +21,7 @@ export default function FourOhFour() {
         <section className="marquidaoum">
           <p>
             You can return to the{' '}
-            <Link href="/">
+            <Link href="/" locale="en">
               <a>home page</a>
             </Link>{' '}
             to find other posts or you can watch me playing piano 😁.

@@ -6,11 +6,11 @@ export default function SiteHeader() {
       <footer>
         <div className="footerLeft">
           <p>
-            <Link href="/">
+            <Link href="/" locale="en">
               <a>Tall Eye</a>
             </Link>
             , a website by{' '}
-            <Link href="/about">
+            <Link href="/about" locale="en">
               <a>Luis Cipriani</a>
             </Link>
             <br />
@@ -28,7 +28,7 @@ export default function SiteHeader() {
 
         <div className="footerRight">
           <p>
-            <Link href="/posts-rss.xml">
+            <Link href="/posts-rss.xml" locale="en">
               <a className="iconLink">
                 <span className="visually-hidden">RSS feed</span>
                 <svg

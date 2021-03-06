@@ -4,7 +4,7 @@ export default function SiteHeader() {
   return (
     <>
       <header>
-        <Link href="/">
+        <Link href="/" locale="en">
           <a className="title" name="top">
             <span>{process.env.NEXT_PUBLIC_SITE_TITLE}</span>
           </a>
@@ -12,7 +12,7 @@ export default function SiteHeader() {
         <nav>
           <ul>
             <li>
-              <Link href="/about">
+              <Link href="/about" locale="en">
                 <a>About</a>
               </Link>
             </li>
