@@ -8,7 +8,7 @@ image: /img-posts/po-thumb.jpg
 lang: pt-BR
 ---
 
-Para ba Campus Party Brasil 2014, eu criei um bot do Twitter que ajudava os participantes a descobrir quais palestras acompanhar, dado que no evento acontecem inúmeras palestras simultâneas. Eu também apresentei o projeto em uma palestra no mesmo evento. O bot funcionava mais ou menos assim:
+Para a Campus Party Brasil 2014, eu criei um bot do Twitter que ajudava os participantes a descobrir quais palestras acompanhar, dado que no evento acontecem inúmeras palestras simultâneas. Eu também apresentei o projeto em uma palestra no mesmo evento. O bot funcionava mais ou menos assim:
 
 ![](/img-posts/po-tweet.png)
 
