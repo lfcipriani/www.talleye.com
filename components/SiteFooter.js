@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
-export default function SiteHeader() {
+export default function SiteFooter() {
   return (
     <>
       <footer>
@@ -73,39 +74,7 @@ export default function SiteHeader() {
               </a>
             </Link>
 
-            <a href="#" className="iconLink">
-              <span className="visually-hidden">Toggle interface theme</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                fill="#284B63"
-                viewBox="0 0 256 256"
-                className="svgIcon"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <rect width="256" height="256" fill="none"></rect>
-                <path
-                  d="M88,148a68,68,0,1,1,68,68H76a44,44,0,1,1,14.30583-85.62208"
-                  fill="none"
-                  stroke="#284B63"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="16"
-                  className="stroke"
-                ></path>
-                <path
-                  d="M46.99,138.92889A64.12919,64.12919,0,0,1,9.6218,94.37955l.00023-.001A64.0566,64.0566,0,0,0,86.37854,17.622l.00084-.00019A64.02478,64.02478,0,0,1,136,80q0,1.51431-.06961,3.01174"
-                  fill="none"
-                  stroke="#284B63"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="16"
-                  className="stroke"
-                ></path>
-              </svg>
-            </a>
+            <ThemeToggle />
 
             <a href="#top" className="iconLink">
               <span className="visually-hidden">Scroll to the top of the page</span>

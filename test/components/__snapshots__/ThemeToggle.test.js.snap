@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the element 1`] = `
+<a
+  href="#"
+  onClick={[Function]}
+>
+  <span
+    className="jsx-676870541 visually-hidden"
+  >
+    Toggle to light theme
+  </span>
+  <svg
+    aria-hidden="true"
+    className="jsx-676870541 svgIcon"
+    fill="#284B63"
+    focusable="false"
+    height="35"
+    viewBox="0 0 256 256"
+    width="35"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      className="jsx-676870541"
+      fill="none"
+      height="256"
+      width="256"
+    />
+    <path
+      className="jsx-676870541 stroke"
+      d="M88,148a68,68,0,1,1,68,68H76a44,44,0,1,1,14.30583-85.62208"
+      fill="none"
+      stroke="#284B63"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="16"
+    />
+    <path
+      className="jsx-676870541 stroke"
+      d="M46.99,138.92889A64.12919,64.12919,0,0,1,9.6218,94.37955l.00023-.001A64.0566,64.0566,0,0,0,86.37854,17.622l.00084-.00019A64.02478,64.02478,0,0,1,136,80q0,1.51431-.06961,3.01174"
+      fill="none"
+      stroke="#284B63"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="16"
+    />
+  </svg>
+</a>
+`;
+
+exports[`renders the icon in the specified size 1`] = `
+<a
+  href="#"
+  onClick={[Function]}
+>
+  <span
+    className="jsx-676870541 visually-hidden"
+  >
+    Toggle to light theme
+  </span>
+  <svg
+    aria-hidden="true"
+    className="jsx-676870541 svgIcon"
+    fill="#284B63"
+    focusable="false"
+    height="42"
+    viewBox="0 0 256 256"
+    width="42"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      className="jsx-676870541"
+      fill="none"
+      height="256"
+      width="256"
+    />
+    <path
+      className="jsx-676870541 stroke"
+      d="M88,148a68,68,0,1,1,68,68H76a44,44,0,1,1,14.30583-85.62208"
+      fill="none"
+      stroke="#284B63"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="16"
+    />
+    <path
+      className="jsx-676870541 stroke"
+      d="M46.99,138.92889A64.12919,64.12919,0,0,1,9.6218,94.37955l.00023-.001A64.0566,64.0566,0,0,0,86.37854,17.622l.00084-.00019A64.02478,64.02478,0,0,1,136,80q0,1.51431-.06961,3.01174"
+      fill="none"
+      stroke="#284B63"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="16"
+    />
+  </svg>
+</a>
+`;
