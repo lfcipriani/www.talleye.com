@@ -12,7 +12,6 @@
 .marquidaoum h6 {
   text-shadow: 4px 4px 4px var(--color-shadow-heading);
 }
-
 .marquidaoum h1 {
   font-size: 3rem;
   margin: 1.5rem 0;
@@ -77,7 +76,6 @@
   padding: 0;
   font-size: 1em;
 }
-
 /* borders of any pre block */
 .marquidaoum pre {
   border-radius: 10px;
@@ -135,17 +133,13 @@ tbody td {
   vertical-align: top;
   padding: 10px;
 }
+
 /* Horizontal rule */
 hr {
   border: 1px solid var(--color-border-separator);
 }
-/* 
-TODO list
-<ul class="contains-task-list">
-<li class="task-list-item"><input type="checkbox" disabled=""> to do</li>
-<li class="task-list-item"><input type="checkbox" checked="" disabled=""> done</li>
-</ul>
- */
+
+/* TODO list */
 .marquidaoum ul.contains-task-list {
   list-style-type: none;
 }
@@ -169,4 +163,27 @@ TODO list
   -moz-box-shadow: 2px 2px 9px 0px var(--color-shadow-dark);
   border-radius: 5px;
   filter: grayscale(var(--image-grayscale)) opacity(var(--image-opacity));
+}
+
+/* floating blocks */
+.float-right {
+  float: right;
+  margin-left: 20px;
+}
+.float-left {
+  float: left;
+  margin-right: 20px;
+}
+@media screen and (max-width: 500px) {
+  .float-right,
+  .float-left {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+  .float-right img,
+  .float-left img {
+    max-width: 100%;
+    height: auto;
+  }
 }

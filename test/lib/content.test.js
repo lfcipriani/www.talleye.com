@@ -71,4 +71,9 @@ describe('getContentData', () => {
     expect(result.contentHtml).toMatch(/src="https:\/\/.+\/icon48.png/);
     expect(result.contentHtml).not.toMatch(/src="https:\/\/.+http.+\/icon48.png/);
   });
+
+  it('returns content in the root of content folder', async () => {
+    const result = await getContentData('', 'root');
+    expect(result.contentHtml).toMatch(/<p>This is a markdown root content/);
+  });
 });
