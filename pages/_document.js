@@ -16,6 +16,15 @@ class MyDocument extends Document {
             data-domain="talleye.com"
             src="https://stats.talleye.com/js/index.js"
           ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `if(!sessionStorage.getItem("_swa")&&
+              document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){
+                fetch("https://counter.dev/track?"+
+                new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"yrZVUWGdxFeQGcsVjpTm",utcoffset:"1"}))};
+                sessionStorage.setItem("_swa","1");`,
+            }}
+          />
         </Head>
         <body>
           <Main />
