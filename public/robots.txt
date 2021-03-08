@@ -1,5 +1,4 @@
 User-Agent: *
 Allow: / 
 
-# TODO: Uncomment this when Sitemap is available
-# Sitemap: https://www.talleye.com/sitemap.xml
+Sitemap: https://www.talleye.com/sitemap.xml.gz
