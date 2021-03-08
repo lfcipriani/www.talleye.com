@@ -5,22 +5,47 @@ import ReadingTime from '../../components/ReadingTime';
 import Language from '../../components/Language';
 import styles from '../../styles/Post.module.css';
 import { getAllContentSlugs, getContentData } from '../../lib/content';
+import { useRouter } from 'next/router';
+
+const type = 'posts';
 
 export default function Post({ postData }) {
+  const router = useRouter();
   return (
     <Layout>
       <Head>
         <title>
           {postData.title} - {process.env.NEXT_PUBLIC_SITE_TITLE}
         </title>
-        <meta name="description" content={postData.description} />
-        <meta name="keywords" content={postData.tags} />
-        <meta name="author" content={postData.author} />
-        <meta name="og:title" content={postData.title} />
+        <meta
+          name="og:title"
+          content={`${postData.title} - ${process.env.NEXT_PUBLIC_SITE_TITLE}`}
+          key="title"
+        />
+        <meta name="description" content={postData.description} key="desc" />
+        <meta name="og:description" content={postData.description} key="og-desc" />
+        <meta name="author" content={postData.author} key="author" />
+        <meta
+          name="og:url"
+          content={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${
+            router.locale !== router.defaultLocale ? '/' + router.locale : ''
+          }${router.asPath}`}
+          key="url"
+        />
         <meta
           property="og:image"
-          content={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}/${postData.image}`}
+          content={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${postData.image}`}
+          key="image"
         />
+        <meta name="keywords" content={postData.tags} key="keywords" />
+        <meta name="og:type" content="post" key="type" />
+        <link
+          rel="canonical"
+          href={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${
+            router.locale !== router.defaultLocale ? '/' + router.locale : ''
+          }${router.asPath}`}
+          key="canonical"
+        ></link>
       </Head>
       <article>
         <header className={styles.articleHeader}>
@@ -45,7 +70,7 @@ export default function Post({ postData }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllContentSlugs('posts');
+  const paths = getAllContentSlugs(type);
   return {
     paths,
     fallback: false,
@@ -53,7 +78,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getContentData('posts', params.slug);
+  const postData = await getContentData(type, params.slug);
   return {
     props: {
       postData,

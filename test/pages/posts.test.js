@@ -2,6 +2,14 @@ import { render } from '@testing-library/react';
 import Post from '../../pages/posts/[slug]';
 import { getContentData } from '../../lib/content';
 
+beforeAll(() => {
+  const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+  useRouter.mockImplementation(() => ({
+    pathname: '/',
+    locale: 'en',
+  }));
+});
+
 test('renders post metadata', async () => {
   const postData = await getContentData('posts', 'another-md');
   const { getByText } = render(<Post postData={postData} />);

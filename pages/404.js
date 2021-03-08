@@ -7,12 +7,10 @@ export default function FourOhFour() {
   return (
     <Layout>
       <Head>
-        <title>About - {process.env.NEXT_PUBLIC_SITE_TITLE}</title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="author" content="Luis Cipriani" />
-        <meta name="og:title" content={`About - ${process.env.NEXT_PUBLIC_SITE_TITLE}`} />
-        <meta property="og:image" content="" />
+        <title>Not found - Tall Eye</title>
+        <title>{process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye</title>
+        <meta name="og:title" content="Not found - Tall Eye" key="title" />
+        <meta name="robots" content="noindex"></meta>
       </Head>
       <article>
         <header className={styles.articleHeader}>

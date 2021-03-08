@@ -2,6 +2,14 @@ import { render } from '@testing-library/react';
 import Home from '../../pages/index';
 import { getGroupedContentMetadata } from '../../lib/content';
 
+beforeAll(() => {
+  const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+  useRouter.mockImplementation(() => ({
+    pathname: '/',
+    locale: 'en',
+  }));
+});
+
 test('render the index page with mini bio', async () => {
   const allPostsData = await getGroupedContentMetadata('posts');
   const { getByText } = render(<Home allPostsData={allPostsData} />);
