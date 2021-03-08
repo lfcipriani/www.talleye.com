@@ -27,6 +27,7 @@ export default function Layout({ children }) {
           href={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}/posts-rss.xml`}
           title="Luis Cipriani's RSS Feed - Tall Eye"
         ></link>
+        <link rel="canonical" href={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}`}></link>
       </Head>
 
       <SiteHeader />
