@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
+import RSSLink from './RSSLink';
 
 export default function SiteHeader() {
   return (
@@ -11,6 +13,12 @@ export default function SiteHeader() {
         </Link>
         <nav>
           <ul>
+            <li>
+              <RSSLink size="20" />
+            </li>
+            <li>
+              <ThemeToggle size="20" />
+            </li>
             <li>
               <Link href="/about" locale="en">
                 <a>About</a>
@@ -63,7 +71,7 @@ export default function SiteHeader() {
             display: flex;
           }
           li + li {
-            margin-left: 15px;
+            margin-left: 10px;
           }
         `}
       </style>
