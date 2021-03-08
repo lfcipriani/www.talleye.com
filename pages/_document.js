@@ -14,7 +14,7 @@ class MyDocument extends Document {
             async
             defer
             data-domain="talleye.com"
-            src="https://plausible.io/js/plausible.js"
+            src="https://stats.talleye.com/js/index.js"
           ></script>
         </Head>
         <body>
