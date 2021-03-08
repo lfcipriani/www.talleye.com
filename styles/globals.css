@@ -8,6 +8,7 @@
     url('/fonts/Lora-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Source Sans Pro';
@@ -19,6 +20,7 @@
     url('/fonts/SourceSansPro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* CSS variables */
