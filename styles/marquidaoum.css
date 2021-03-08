@@ -57,13 +57,14 @@
 }
 
 /* Code */
-/* Backticks code block are handled by prism */
+/* code block with Backticks */
 .marquidaoum code:not([class*='language-']) {
   background-color: var(--color-text-code-bg);
   color: var(--color-text-code);
   padding: 1px 4px;
   font-size: 1rem;
 }
+/* pre block with 4 spaces */
 .marquidaoum pre:not([class*='language-']) {
   padding: 1em;
   margin: 1.2rem 0;
@@ -71,13 +72,26 @@
   overflow: auto;
   background-color: var(--color-text-code-bg);
 }
+/* code block with 4 spaces */
 .marquidaoum pre:not([class*='language-']) code:not([class*='language-']) {
   padding: 0;
   font-size: 1em;
 }
+
+/* borders of any pre block */
 .marquidaoum pre {
   border-radius: 10px;
   margin: 1.2rem 0;
+}
+@media screen and (max-width: 500px) {
+  /* prism code blocks */
+  .marquidaoum pre[class*='language-'] {
+    font-size: 0.5rem;
+  }
+  /* pre blocks with 4 spaces */
+  .marquidaoum pre:not([class*='language-']) {
+    font-size: 0.5rem;
+  }
 }
 
 /* Blockquotes, inherited from global.css */
