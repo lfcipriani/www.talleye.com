@@ -11,12 +11,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <script
-            async
-            defer
-            data-domain="talleye.com"
-            src="https://stats.talleye.com/js/index.js"
-          ></script>
-          <script
             dangerouslySetInnerHTML={{
               __html: `if(!sessionStorage.getItem("_swa")&&
               document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){
