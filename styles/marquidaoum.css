@@ -84,11 +84,11 @@
 @media screen and (max-width: 500px) {
   /* prism code blocks */
   .marquidaoum pre[class*='language-'] {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   /* pre blocks with 4 spaces */
   .marquidaoum pre:not([class*='language-']) {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 }
 
