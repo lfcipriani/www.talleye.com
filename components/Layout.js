@@ -9,6 +9,20 @@ export default function Layout({ children }) {
   return (
     <div className={styles.container}>
       <Head>
+        <link
+          rel="preload"
+          href="/fonts/Lora-Bold.woff2"
+          crossOrigin="anonymous"
+          as="font"
+          type="font/woff2"
+        />
+        <link
+          rel="preload"
+          href="/fonts/SourceSansPro-Regular.woff2"
+          crossOrigin="anonymous"
+          as="font"
+          type="font/woff2"
+        />
         <link rel="icon" href="/favicon.ico" />
         <title>{process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye</title>
         <meta
