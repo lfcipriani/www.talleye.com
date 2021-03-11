@@ -66,6 +66,8 @@ Lorem ipsum dolor sit amet, [consectetur adipiscing elit](https://www.talleye.co
 
 [I'm an inline-style link](https://www.google.com)
 
+[Yet Another](/posts/yet-another)
+
 [I'm a reference-style link][arbitrary case-insensitive reference text]
 
 [You can use numbers for reference-style link definitions][1]

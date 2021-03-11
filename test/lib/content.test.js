@@ -72,6 +72,14 @@ describe('getContentData', () => {
     expect(result.contentHtml).not.toMatch(/src="https:\/\/.+http.+\/icon48.png/);
   });
 
+  it('adds target="_blank" automatically for external links', async () => {
+    const result = await getContentData('posts', 'markdown-test');
+    expect(result.contentHtml).toMatch(/<a href="\/posts\/yet-another">Yet Another/);
+    expect(result.contentHtml).toMatch(
+      /<a href="https:\/\/www\.google\.com" target="_blank">I'm an inline/
+    );
+  });
+
   it('returns content in the root of content folder', async () => {
     const result = await getContentData('', 'root');
     expect(result.contentHtml).toMatch(/<p>This is a markdown root content/);
