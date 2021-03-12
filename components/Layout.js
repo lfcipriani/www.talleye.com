@@ -46,7 +46,7 @@ export default function Layout({ children }) {
         />
         <meta
           property="og:image"
-          content={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}/avatar.png`}
+          content={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}/ogImage.jpg`}
           key="image"
         />
         <meta name="og:type" content="website" key="type" />

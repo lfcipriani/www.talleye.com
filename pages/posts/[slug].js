@@ -34,7 +34,11 @@ export default function Post({ postData }) {
         />
         <meta
           property="og:image"
-          content={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${postData.image}`}
+          content={
+            postData.image
+              ? `https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${postData.image}`
+              : `https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}/ogImage.jpg`
+          }
           key="image"
         />
         <meta name="keywords" content={postData.tags} key="keywords" />

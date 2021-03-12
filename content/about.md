@@ -4,7 +4,7 @@ description: Who am I and how to reach out to me.
 datePublished: '2021-03-08T00:00:00Z'
 author: Luis Cipriani
 tags: tall eye, technology, computer science, software development
-image: /avatar.png
+image: /ogImage.jpg
 ---
 
 <div class="float-right">
