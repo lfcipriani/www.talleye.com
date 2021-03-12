@@ -15,6 +15,4 @@ The result of this work became a paper published by Springer in the book "[Rest:
 
 I spoke in QCon Conference São Paulo in 2012 about all the technical aspects of Alexandria, you can find links to [slides (in Portuguese)](https://www.slideshare.net/lfcipriani/como-um-verdadeiro-sistema-rest-funciona-arquitetura-e-performance-na-abril) and the [talk video](https://www.infoq.com/br/presentations/rest-arquitetura-abril) (in Portuguese).
 
-<div class="media">
-<iframe class="media-asset" src="//www.slideshare.net/slideshow/embed_code/key/4WRt2NA3y7L6gK" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/lfcipriani/como-um-verdadeiro-sistema-rest-funciona-arquitetura-e-performance-na-abril" title="Como um verdadeiro sistema REST funciona: arquitetura e performance na Abril" target="_blank">Como um verdadeiro sistema REST funciona: arquitetura e performance na Abril</a> </strong> from <strong><a href="https://www.slideshare.net/lfcipriani" target="_blank">Luis Cipriani</a></strong> </div>
-</div>
+[![](/img-posts/sospdc-slides.jpg)](https://www.slideshare.net/lfcipriani/como-um-verdadeiro-sistema-rest-funciona-arquitetura-e-performance-na-abril 'Open Slideshare')

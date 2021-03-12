@@ -29,6 +29,4 @@ At Abril we have a perfect environment to use this strategy for data integration
 
 Meanwhile, check the presentation slides below, it has more detail about the technologies and cases (in Portuguese):
 
-<div class="media">
-<iframe class="media-asset" src="//www.slideshare.net/slideshow/embed_code/key/GjYwa73kVtvkP6" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/lfcipriani/explaining-semantic-web" title="Explaining Semantic Web" target="_blank">Explaining Semantic Web</a> </strong> from <strong><a href="https://www.slideshare.net/lfcipriani" target="_blank">Luis Cipriani</a></strong> </div>
-</div>
+[![](/img-posts/esw-slides.jpg)](https://www.slideshare.net/lfcipriani/explaining-semantic-web 'Open Slideshare')

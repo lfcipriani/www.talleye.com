@@ -65,8 +65,6 @@ This post is an illustrative contribution to item 2 and presents the four basic 
 
 If you want to dig deeper on the subject, this content above was included in a talk I [presented at Rubyconf Brazil 2013](https://www.eventials.com/locaweb/caching-de-apis-na-pratica-porque-seu-servidor-merece-um-descanso/) about HTTP Caching (intro and good practices). The slides are embedded below:
 
-<div class="media">
-<iframe class="media-asset" src="//www.slideshare.net/slideshow/embed_code/key/G7l3l3E97glyJ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/lfcipriani/api-caching-why-your-server" title="API Caching, why your server needs some rest" target="_blank">API Caching, why your server needs some rest</a> </strong> from <strong><a href="https://www.slideshare.net/lfcipriani" target="_blank">Luis Cipriani</a></strong> </div>
-</div>
+[![](/img-posts/t4bfhc-slides.png)](https://www.slideshare.net/lfcipriani/api-caching-why-your-server 'Open Slideshare')
 
 You might also like to explore the **[HTTP headers RFC](https://href.li/?http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14 'Headers in HTTP RFC')**.

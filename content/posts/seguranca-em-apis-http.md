@@ -4,7 +4,7 @@ description: Um guia para devs preocupados. Palestra apresentada na QCon São Pa
 datePublished: '2013-08-31T00:00:00Z'
 author: Luis Cipriani
 tags: talk, api, security, web, http
-image: /img-posts/
+image: /img-posts/sah-slides.png
 lang: pt-BR
 ---
 
@@ -15,6 +15,4 @@ Essa semana eu apresentei uma palestra na QCon São Paulo sobre segurança em AP
 
 E os slides:
 
-<div class="media">
-<iframe class="media-asset" src="//www.slideshare.net/slideshow/embed_code/key/d0Xi3wSq2UaQQK" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/lfcipriani/segurana-de-p" title="Segurança de APIs HTTP, um guia sensato para desenvolvedores preocupados" target="_blank">Segurança de APIs HTTP, um guia sensato para desenvolvedores preocupados</a> </strong> from <strong><a href="https://www.slideshare.net/lfcipriani" target="_blank">Luis Cipriani</a></strong> </div>
-</div>
+[![](/img-posts/sah-slides.png)](https://www.slideshare.net/lfcipriani/segurana-de-p 'Abrir no Slideshare')
