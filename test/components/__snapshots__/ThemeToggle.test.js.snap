@@ -8,7 +8,7 @@ exports[`renders the element 1`] = `
   <span
     className="jsx-676870541 visually-hidden"
   >
-    Toggle to light theme
+    Toggle to dark theme
   </span>
   <svg
     aria-hidden="true"
@@ -56,7 +56,7 @@ exports[`renders the icon in the specified size 1`] = `
   <span
     className="jsx-676870541 visually-hidden"
   >
-    Toggle to light theme
+    Toggle to dark theme
   </span>
   <svg
     aria-hidden="true"

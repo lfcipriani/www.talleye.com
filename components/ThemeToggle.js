@@ -9,7 +9,7 @@ export default class ThemeToggle extends React.Component {
   sunIcon() {
     return (
       <>
-        <span className="visually-hidden">Toggle to dark theme</span>
+        <span className="visually-hidden">Toggle to light theme</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="#000000"
@@ -146,7 +146,7 @@ export default class ThemeToggle extends React.Component {
   moonIcon() {
     return (
       <>
-        <span className="visually-hidden">Toggle to light theme</span>
+        <span className="visually-hidden">Toggle to dark theme</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={this.props.size || '35'}
