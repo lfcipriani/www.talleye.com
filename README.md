@@ -1,6 +1,8 @@
-Source code from [talleye.com](https://www.talleye.com), my personal website.
+![](/public/ogImage.jpg)
 
-Features:
+Source code of [talleye.com](https://www.talleye.com), my personal website.
+
+## Features
 
 - Posts written in Markdown
 - Dark and light theme
@@ -17,7 +19,7 @@ Built with:
 - [rehype](https://github.com/rehypejs/rehype): for HTML processing
 - Among other dependencies
 
-## Setup development
+## Development Setup
 
 Clone this repository, make sure to use Node.js `14.15.4` or greater. Then:
 
@@ -36,9 +38,9 @@ Run `npm run ci` to also execute prettier and linter checks.
 
 ## Deploy
 
-We use Vercel to host the website, this means that to deploy you just need to push code to `main` branch.
+[Vercel](https://vercel.com) is used to host the website, this means that to deploy you just need to push code to `main` branch.
 
----
+## Licensing
 
 - Source code distributed under MIT License
 - Content of the website under [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/)
