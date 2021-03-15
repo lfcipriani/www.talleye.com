@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 
 const type = 'posts';
 
-export default function Post({ postData }) {
+export default function Post({ postData, locale }) {
   const router = useRouter();
   return (
     <Layout>
@@ -54,7 +54,7 @@ export default function Post({ postData }) {
       <article>
         <header className={styles.articleHeader}>
           <h1 className={styles.title}>{postData.title}</h1>
-          {postData.lang !== undefined && (
+          {postData.lang !== locale && (
             <p className={styles.articleDescription}>
               <Language lang={postData.lang} />
             </p>
@@ -81,11 +81,12 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
-  const postData = await getContentData(type, params.slug);
+export async function getStaticProps({ params, locale }) {
+  const postData = await getContentData(type, params.slug, { locale: locale });
   return {
     props: {
       postData,
+      locale,
     },
   };
 }

@@ -5,7 +5,7 @@ import Language from '../components/Language';
 import { getContentData } from '../lib/content';
 import { useRouter } from 'next/router';
 
-export default function About({ postData }) {
+export default function About({ postData, locale }) {
   const router = useRouter();
   return (
     <Layout>
@@ -33,7 +33,7 @@ export default function About({ postData }) {
       <article>
         <header className={styles.articleHeader}>
           <h1 className={styles.title}>{postData.title}</h1>
-          {postData.lang !== undefined && (
+          {postData.lang !== locale && (
             <p className={styles.articleDescription}>
               <Language lang={postData.lang} />
             </p>
@@ -48,11 +48,12 @@ export default function About({ postData }) {
   );
 }
 
-export async function getStaticProps() {
-  const postData = await getContentData('', 'about');
+export async function getStaticProps({ locale }) {
+  const postData = await getContentData('', 'about', { locale: locale });
   return {
     props: {
       postData,
+      locale,
     },
   };
 }

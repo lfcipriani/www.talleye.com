@@ -7,7 +7,7 @@ import { getGroupedContentMetadata } from '../lib/content';
 import { generateRSS } from '../lib/rssGen';
 import { generateSitemap } from '../lib/sitemap';
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsData, locale }) {
   return (
     <Layout>
       <blockquote>
@@ -33,13 +33,13 @@ export default function Home({ allPostsData }) {
             <ul>
               {allPostsData[yearMonth].map(({ slug, title, description, lang }) => (
                 <li key={slug}>
-                  <Link href={`/${allPostsData.type}/${slug}`} locale={lang !== undefined && lang}>
+                  <Link href={`/${allPostsData.type}/${slug}`} locale={lang !== locale && lang}>
                     <a className={styles.articleTitle}>
                       <h3>{title}</h3>
                     </a>
                   </Link>
                   <p className={styles.articleDescription}>
-                    {lang !== undefined && <Language lang={lang} />}
+                    {lang !== locale && <Language lang={lang} />}
                     {description}
                   </p>
                 </li>
@@ -52,7 +52,7 @@ export default function Home({ allPostsData }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const type = 'posts';
 
   if (process.env.NODE_ENV !== 'test') {
@@ -69,6 +69,7 @@ export async function getStaticProps() {
   return {
     props: {
       allPostsData,
+      locale,
     },
   };
 }

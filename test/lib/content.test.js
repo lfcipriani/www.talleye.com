@@ -8,7 +8,7 @@ import {
 describe('getContentMetadata', () => {
   it('return sorted list of slugs and metadata, ordered by most recent', () => {
     const result = getContentMetadata('posts');
-    expect(result).toHaveLength(4);
+    expect(result).toHaveLength(5);
     expect(result[2].slug).toEqual('yet-another');
     expect(result[1].slug).toEqual('another-md');
     expect(result[0].slug).toEqual('md-test-2');
@@ -18,7 +18,7 @@ describe('getContentMetadata', () => {
 describe('getGroupedContentMetadata', () => {
   it('return sorted list of slugs and metadata, grouped by year and month', () => {
     const result = getGroupedContentMetadata('posts');
-    expect(result.monthGroups).toHaveLength(3);
+    expect(result.monthGroups).toHaveLength(4);
     expect(result.monthGroups[0]).toEqual('2021-01');
     expect(result['2020-11'][0].slug).toEqual('yet-another');
 
@@ -32,16 +32,16 @@ describe('getGroupedContentMetadata', () => {
 describe('getAllContentSlugs', () => {
   it('return all posts slugs under posts content folder', () => {
     const slugs = getAllContentSlugs('posts');
-    expect(slugs).toHaveLength(5);
+    expect(slugs).toHaveLength(9);
     expect(slugs[0].params.slug).toEqual('another-md');
-    expect(slugs[1].params.slug).toEqual('markdown-test');
+    expect(slugs[2].params.slug).toEqual('markdown-test');
   });
 
   it('return also the locale for non English posts', () => {
     const slugs = getAllContentSlugs('posts');
-    expect(slugs).toHaveLength(5);
-    expect(slugs[3].params.slug).toEqual('portuguese-post');
-    expect(slugs[3].locale).toEqual('pt-BR');
+    expect(slugs).toHaveLength(9);
+    expect(slugs[5].params.slug).toEqual('portuguese-post');
+    expect(slugs[5].locale).toEqual('pt-BR');
   });
 });
 
