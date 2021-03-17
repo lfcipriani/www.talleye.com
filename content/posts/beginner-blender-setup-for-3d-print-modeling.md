@@ -5,6 +5,9 @@ datePublished: '2021-03-13T00:00:00Z'
 author: Luis Cipriani
 tags: blender, 3d print, guide, setup, open source
 image: /img-posts/bbs3pm-final.jpg
+alternate:
+  - lang: pt-BR
+    slug: configuracao-do-blender-para-impressao-3d-para-iniciantes
 ---
 
 One of the distractions I decided to get since the pandemic started was a 3D printer. I was always curious about them but never got a strong reason to buy until I had to find ways to get my son and me entertained at home. And I must say, 3D printers are fun and opens a world of possibilities of toys, tools, home appliances and [many more](https://www.thingiverse.com/).
