@@ -50,6 +50,16 @@ export default function Post({ postData }) {
           }${router.asPath}`}
           key="canonical"
         ></link>
+        {postData.alternate &&
+          postData.alternate.map((alt) => (
+            <link
+              rel="alternate"
+              href={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${
+                alt.lang !== router.defaultLocale ? '/' + alt.lang : ''
+              }/${type}/${alt.slug}`}
+              hreflang={alt.lang}
+            />
+          ))}
       </Head>
       <article>
         <header className={styles.articleHeader}>
