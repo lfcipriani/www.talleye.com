@@ -9,7 +9,7 @@ import { generateSitemap } from '../lib/sitemap';
 
 const type = 'posts';
 
-export default function Home({ allPostsData, locale }) {
+export default function Home({ allPostsData }) {
   return (
     <Layout>
       <blockquote>
@@ -35,7 +35,7 @@ export default function Home({ allPostsData, locale }) {
             <ul>
               {allPostsData[yearMonth].map(({ slug, title, description, lang, alternate }) => (
                 <li key={slug}>
-                  <Link href={`/${allPostsData.type}/${slug}`} locale={lang !== locale && lang}>
+                  <Link href={`/${allPostsData.type}/${slug}`} locale={lang}>
                     <a className={styles.articleTitle}>
                       <h3>{title}</h3>
                     </a>
@@ -66,7 +66,7 @@ export async function getStaticProps({ locale }) {
     console.log('Generated sitemap.xml.');
   }
 
-  const allPostsData = getGroupedContentMetadata(type);
+  const allPostsData = getGroupedContentMetadata(type, locale);
   return {
     props: {
       allPostsData,

@@ -52,7 +52,7 @@ describe('locale and content language are not equal', () => {
     render(<Language lang="en" />);
     var element = screen.getByText(/Somente disponível/);
     expect(element).toBeInTheDocument();
-    element = screen.getByText(/English/);
+    element = screen.getByText(/Inglês/);
     expect(element).toBeInTheDocument();
   });
 
@@ -61,7 +61,7 @@ describe('locale and content language are not equal', () => {
     render(<Language lang="en" alternate={alternate} type="posts" />);
     var element = screen.getByText(/Somente disponível/);
     expect(element).toBeInTheDocument();
-    element = screen.getByText(/English/);
+    element = screen.getByText(/Inglês/);
     expect(element).toBeInTheDocument();
     element = screen.getByText(/Português/);
     expect(element).toBeInTheDocument();
@@ -75,7 +75,7 @@ describe('locale and content language are not equal', () => {
     render(<Language lang="en" alternate={alternate} type="posts" />);
     var element = screen.getByText(/Somente disponível/);
     expect(element).toBeInTheDocument();
-    element = screen.getByText(/English/);
+    element = screen.getByText(/Inglês/);
     expect(element).toBeInTheDocument();
     element = screen.getByText(/Português/);
     expect(element).toBeInTheDocument();
