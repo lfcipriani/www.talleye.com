@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 
 const type = 'posts';
 
-export default function Post({ postData, locale }) {
+export default function Post({ postData }) {
   const router = useRouter();
   return (
     <Layout>
@@ -54,11 +54,12 @@ export default function Post({ postData, locale }) {
       <article>
         <header className={styles.articleHeader}>
           <h1 className={styles.title}>{postData.title}</h1>
-          {postData.lang !== locale && (
-            <p className={styles.articleDescription}>
-              <Language lang={postData.lang} />
-            </p>
-          )}
+          <Language
+            lang={postData.lang}
+            alternate={postData.alternate}
+            type={type}
+            wrapper={(children) => <p className={styles.articleDescription}>{children}</p>}
+          />
           <div className={styles.subHeader}>
             <Date dateString={postData.datePublished} />
             <ReadingTime minutes={postData.readingTime} />

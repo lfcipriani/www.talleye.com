@@ -7,6 +7,7 @@ beforeAll(() => {
   useRouter.mockImplementation(() => ({
     pathname: '/',
     locale: 'en',
+    defaultLocale: 'en',
   }));
 });
 
@@ -27,12 +28,10 @@ test('render the index page with content list', async () => {
   expect(element).toBeInTheDocument();
 });
 
-test('render a language hint when the content is not in Engllish', async () => {
+test('render a language hint when the content is not in English', async () => {
   const allPostsData = await getGroupedContentMetadata('posts');
   const { getByText } = render(<Home allPostsData={allPostsData} />);
   expect(allPostsData.type).toEqual('posts');
   var element = getByText(/Olá Mundo!/);
-  expect(element).toBeInTheDocument();
-  element = getByText(/Portuguese/);
   expect(element).toBeInTheDocument();
 });

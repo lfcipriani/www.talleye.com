@@ -7,6 +7,7 @@ beforeAll(() => {
   useRouter.mockImplementation(() => ({
     pathname: '/',
     locale: 'en',
+    defaultLocale: 'en',
   }));
 });
 
@@ -30,11 +31,9 @@ test('renders post content', async () => {
   expect(element).toBeInTheDocument();
 });
 
-test('render a language hint when the content is not in Engllish', async () => {
+test('render a language hint when the content is not in English', async () => {
   const postData = await getContentData('posts', 'portuguese-post');
   const { getByText } = render(<Post postData={postData} />);
   var element = getByText(/Olá Mundo!/);
-  expect(element).toBeInTheDocument();
-  element = getByText(/Portuguese/);
   expect(element).toBeInTheDocument();
 });

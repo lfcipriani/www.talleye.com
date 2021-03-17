@@ -1,11 +1,10 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import styles from '../styles/About.module.css';
-import Language from '../components/Language';
 import { getContentData } from '../lib/content';
 import { useRouter } from 'next/router';
 
-export default function About({ postData, locale }) {
+export default function About({ postData }) {
   const router = useRouter();
   return (
     <Layout>
@@ -33,11 +32,6 @@ export default function About({ postData, locale }) {
       <article>
         <header className={styles.articleHeader}>
           <h1 className={styles.title}>{postData.title}</h1>
-          {postData.lang !== locale && (
-            <p className={styles.articleDescription}>
-              <Language lang={postData.lang} />
-            </p>
-          )}
         </header>
         <section
           className="marquidaoum"
@@ -53,7 +47,6 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       postData,
-      locale,
     },
   };
 }

@@ -7,6 +7,8 @@ import { getGroupedContentMetadata } from '../lib/content';
 import { generateRSS } from '../lib/rssGen';
 import { generateSitemap } from '../lib/sitemap';
 
+const type = 'posts';
+
 export default function Home({ allPostsData, locale }) {
   return (
     <Layout>
@@ -31,7 +33,7 @@ export default function Home({ allPostsData, locale }) {
           <div className={styles.monthGroup} key={yearMonth}>
             <h2 className={styles.month}>{yearMonth}</h2>
             <ul>
-              {allPostsData[yearMonth].map(({ slug, title, description, lang }) => (
+              {allPostsData[yearMonth].map(({ slug, title, description, lang, alternate }) => (
                 <li key={slug}>
                   <Link href={`/${allPostsData.type}/${slug}`} locale={lang !== locale && lang}>
                     <a className={styles.articleTitle}>
@@ -39,8 +41,9 @@ export default function Home({ allPostsData, locale }) {
                     </a>
                   </Link>
                   <p className={styles.articleDescription}>
-                    {lang !== locale && <Language lang={lang} />}
                     {description}
+                    <br />
+                    <Language lang={lang} alternate={alternate} type={type} />
                   </p>
                 </li>
               ))}
@@ -53,8 +56,6 @@ export default function Home({ allPostsData, locale }) {
 }
 
 export async function getStaticProps({ locale }) {
-  const type = 'posts';
-
   if (process.env.NODE_ENV !== 'test') {
     const path = `${process.cwd()}/public/${type}-rss.xml`;
     const rssFeed = await generateRSS(type);
