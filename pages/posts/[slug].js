@@ -53,11 +53,12 @@ export default function Post({ postData }) {
         {postData.alternate &&
           postData.alternate.map((alt) => (
             <link
+              key={alt.slug}
               rel="alternate"
               href={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${
                 alt.lang !== router.defaultLocale ? '/' + alt.lang : ''
               }/${type}/${alt.slug}`}
-              hreflang={alt.lang}
+              hrefLang={alt.lang}
             />
           ))}
       </Head>
