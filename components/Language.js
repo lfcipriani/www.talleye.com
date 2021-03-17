@@ -1,17 +1,65 @@
-export default function Language({ lang }) {
-  const languages = {
-    'pt-BR': 'Portuguese',
-    en: 'English',
-  };
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import i from '../content/i18n';
+
+export default function Language({ lang, alternate, type, wrapper, locale }) {
+  const router = useRouter();
+  const activeLocale = locale || router.locale;
+
+  function langText(locale) {
+    return (
+      <>
+        <img src={`/locales/${locale}.png`} width="16" height="12" aria-hidden="true" />{' '}
+        {i('langName', locale)[locale]}
+        <style jsx>{`
+          img {
+            display: inline;
+          }
+        `}</style>
+      </>
+    );
+  }
+
+  function langMessage(text, alternates) {
+    return (
+      <>
+        {text}{' '}
+        {alternates.reduce((accu, alt) => {
+          return accu === null ? [alt] : [...accu, ', ', alt];
+        }, null)}
+        .{' '}
+      </>
+    );
+  }
+
+  var text = null;
+  var alternates = [];
+
+  if (lang === activeLocale) {
+    if (!alternate) {
+      return null;
+    } else {
+      text = <>{i('alsoAvailable')}</>;
+    }
+  } else {
+    alternates.push(langText(lang));
+    text = <>{i('onlyAvailable')}</>;
+  }
+  if (alternate) {
+    alternate.forEach((alt) => {
+      alternates.push(
+        <Link href={`/${type}/${alt.slug}`} locale={alt.lang}>
+          <a>{langText(alt.lang)}</a>
+        </Link>
+      );
+    });
+  }
+
   return (
     <>
-      <img src={`/locales/${lang}.png`} alt="pt-BR flag" width="16" height="12" />{' '}
-      <em>Content in {languages[lang]}.</em>{' '}
-      <style jsx>{`
-        img {
-          display: inline;
-        }
-      `}</style>
+      {typeof wrapper === 'function'
+        ? wrapper(langMessage(text, alternates))
+        : langMessage(text, alternates)}
     </>
   );
 }
