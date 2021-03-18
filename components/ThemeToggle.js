@@ -1,21 +1,18 @@
 import React from 'react';
 import { ThemeContext } from './Theme';
+import i from '../content/i18n';
 
-export default class ThemeToggle extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  sunIcon() {
+export default function ThemeToggle({ size }) {
+  function sunIcon() {
     return (
       <>
-        <span className="visually-hidden">Toggle to light theme</span>
+        <span className="visually-hidden">{toggleToLightTheme}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="#000000"
           viewBox="0 0 256 256"
-          width={this.props.size || '35'}
-          height={this.props.size || '35'}
+          width={size || '35'}
+          height={size || '35'}
           className="svgIcon"
           aria-hidden="true"
           focusable="false"
@@ -143,14 +140,14 @@ export default class ThemeToggle extends React.Component {
     );
   }
 
-  moonIcon() {
+  function moonIcon() {
     return (
       <>
-        <span className="visually-hidden">Toggle to dark theme</span>
+        <span className="visually-hidden">{toggleToDarkTheme}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width={this.props.size || '35'}
-          height={this.props.size || '35'}
+          width={size || '35'}
+          height={size || '35'}
           fill="#284B63"
           viewBox="0 0 256 256"
           className="svgIcon"
@@ -191,15 +188,20 @@ export default class ThemeToggle extends React.Component {
     );
   }
 
-  render() {
-    return (
-      <ThemeContext.Consumer>
-        {({ theme, toggleTheme }) => (
-          <a href="#" onClick={toggleTheme}>
-            {theme === 'light' ? this.moonIcon() : this.sunIcon()}
-          </a>
-        )}
-      </ThemeContext.Consumer>
-    );
-  }
+  const toggleToLightTheme = i('toggleToLightTheme');
+  const toggleToDarkTheme = i('toggleToDarkTheme');
+
+  return (
+    <ThemeContext.Consumer>
+      {({ theme, toggleTheme }) => (
+        <a
+          href="#"
+          onClick={toggleTheme}
+          title={theme === 'light' ? toggleToDarkTheme : toggleToLightTheme}
+        >
+          {theme === 'light' ? moonIcon() : sunIcon()}
+        </a>
+      )}
+    </ThemeContext.Consumer>
+  );
 }

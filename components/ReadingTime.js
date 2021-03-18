@@ -1,3 +1,5 @@
+import i from '../content/i18n';
+
 export default function ReadingTime({ minutes }) {
   return (
     <p>
@@ -43,7 +45,7 @@ export default function ReadingTime({ minutes }) {
           strokeWidth="16"
         ></line>
       </svg>
-      {minutes} min
+      {minutes} {i('min')}
       <style jsx>
         {`
           .icon {

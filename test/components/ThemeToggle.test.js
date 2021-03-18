@@ -3,6 +3,14 @@ import renderer from 'react-test-renderer';
 import ThemeToggle from '../../components/ThemeToggle';
 import ThemeProvider from '../../components/Theme';
 
+beforeAll(() => {
+  const useRouter = jest.spyOn(require('next/router'), 'useRouter');
+  useRouter.mockImplementation(() => ({
+    locale: 'en',
+    defaultLocale: 'en',
+  }));
+});
+
 test('renders the element', () => {
   const component = renderer.create(<ThemeToggle />);
   let tree = component.toJSON();

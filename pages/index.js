@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.css';
 import { getGroupedContentMetadata } from '../lib/content';
 import { generateRSS } from '../lib/rssGen';
 import { generateSitemap } from '../lib/sitemap';
+import i from '../content/i18n';
 
 const type = 'posts';
 
@@ -14,21 +15,20 @@ export default function Home({ allPostsData }) {
     <Layout>
       <blockquote>
         <p className={styles.bioText}>
-          I'm{' '}
-          <Link href="https://twitter.com/lfcipriani">
-            <a>Luis Cipriani</a>
-          </Link>
-          , software engineer and engineering manager. This website is a collection of some projects
-          I built or articles I wrote about technology and software dev. I hope they are useful for
-          you as much as I had fun making them. I also work as CTO at{' '}
-          <Link href="https://www.beat81.com">
-            <a>Beat81</a>
-          </Link>
-          .
+          {i('bioShortText')
+            ? i('bioShortText')(
+                <Link href="https://twitter.com/lfcipriani">
+                  <a>Luis Cipriani</a>
+                </Link>,
+                <Link href="https://www.beat81.com">
+                  <a>Beat81</a>
+                </Link>
+              )
+            : ''}
         </p>
       </blockquote>
       <section className={styles.articleList}>
-        <h1>All posts</h1>
+        <h1>{i('allPosts')}</h1>
         {allPostsData.monthGroups.map((yearMonth) => (
           <div className={styles.monthGroup} key={yearMonth}>
             <h2 className={styles.month}>{yearMonth}</h2>

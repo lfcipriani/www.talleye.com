@@ -5,6 +5,9 @@ datePublished: '2021-03-08T00:00:00Z'
 author: Luis Cipriani
 tags: tall eye, technology, computer science, software development
 image: /ogImage.jpg
+alternate:
+  - lang: pt-BR
+    slug: sobre
 ---
 
 <div class="float-right">

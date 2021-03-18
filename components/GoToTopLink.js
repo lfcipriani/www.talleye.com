@@ -1,8 +1,10 @@
+import i from '../content/i18n';
+
 export default function GoToTopLink({ size }) {
   return (
     <>
-      <a href="#top">
-        <span className="visually-hidden">Scroll to the top of the page</span>
+      <a href="#top" title={i('scrollToTop')}>
+        <span className="visually-hidden">{i('scrollToTop')}</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={size || '35'}

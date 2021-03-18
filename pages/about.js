@@ -28,6 +28,17 @@ export default function About({ postData }) {
           key="image"
         />
         <meta name="keywords" content={postData.tags} key="keywords" />
+        {postData.alternate &&
+          postData.alternate.map((alt) => (
+            <link
+              key={alt.slug}
+              rel="alternate"
+              href={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${
+                alt.lang !== router.defaultLocale ? '/' + alt.lang : ''
+              }/${alt.slug}`}
+              hrefLang={alt.lang}
+            />
+          ))}
       </Head>
       <article>
         <header className={styles.articleHeader}>
@@ -43,7 +54,11 @@ export default function About({ postData }) {
 }
 
 export async function getStaticProps({ locale }) {
-  const postData = await getContentData('', 'about', { locale: locale });
+  const slug = {
+    en: 'about',
+    'pt-BR': 'sobre',
+  };
+  const postData = await getContentData('', slug[locale]);
   return {
     props: {
       postData,

@@ -14,7 +14,7 @@ beforeAll(() => {
 test('render the index page with mini bio', async () => {
   const allPostsData = await getGroupedContentMetadata('posts');
   const { getByText } = render(<Home allPostsData={allPostsData} />);
-  const element = getByText(/All posts/);
+  const element = getByText(/All Posts/);
   expect(element).toBeInTheDocument();
 });
 

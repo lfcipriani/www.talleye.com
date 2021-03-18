@@ -2,6 +2,7 @@ import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import RSSLink from './RSSLink';
 import GoToTopLink from './GoToTopLink';
+import i from '../content/i18n';
 
 export default function SiteFooter() {
   return (
@@ -12,7 +13,7 @@ export default function SiteFooter() {
             <Link href="/" locale="en">
               <a>Tall Eye</a>
             </Link>
-            , a website by{' '}
+            , {i('aWebsiteBy')}{' '}
             <Link href="/about" locale="en">
               <a>Luis Cipriani</a>
             </Link>
@@ -22,7 +23,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noreferrer nofollow"
             >
-              Some terms apply
+              {i('someTermsApply')}
             </a>
           </p>
         </div>

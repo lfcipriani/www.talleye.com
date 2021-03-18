@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import RSSLink from './RSSLink';
+import i from '../content/i18n';
 
 export default function SiteHeader() {
   return (
@@ -21,7 +22,7 @@ export default function SiteHeader() {
             </li>
             <li>
               <Link href="/about" locale="en">
-                <a>About</a>
+                <a>{i('about')}</a>
               </Link>
             </li>
           </ul>
