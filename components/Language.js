@@ -48,7 +48,7 @@ export default function Language({ lang, alternate, type, wrapper, locale }) {
   if (alternate) {
     alternate.forEach((alt) => {
       alternates.push(
-        <Link href={`/${type}/${alt.slug}`} locale={alt.lang}>
+        <Link href={`${type ? `/${type}` : ''}/${alt.slug}`} locale={alt.lang}>
           <a>{langText(alt.lang)}</a>
         </Link>
       );
