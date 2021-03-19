@@ -79,7 +79,7 @@ describe('locale and content language are not equal', () => {
     expect(element).toBeInTheDocument();
     element = screen.getByText(/Português/);
     expect(element).toBeInTheDocument();
-    element = screen.getByText(/German/);
+    element = screen.getByText(/Alemão/);
     expect(element).toBeInTheDocument();
   });
 

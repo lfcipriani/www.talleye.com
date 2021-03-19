@@ -69,9 +69,19 @@ export const i18nKeys = {
 
 export default function i18n(key, locale = null) {
   const router = useRouter();
-  var activeLocale = locale || router.locale;
-  if (!i18nKeys[activeLocale]) {
-    activeLocale = router.defaultLocale;
+  var activeLocale = null;
+  var defaultLocale = 'en';
+
+  if (locale && i18nKeys[locale]) {
+    activeLocale = locale;
+  } else if (router && router.locale && i18nKeys[router.locale]) {
+    activeLocale = router.locale;
+  } else {
+    activeLocale = 'en';
   }
-  return i18nKeys[activeLocale][key] || i18nKeys[router.defaultLocale][key] || '';
+  if (router && router.defaultLocale && i18nKeys[router.defaultLocale]) {
+    defaultLocale = router.defaultLocale;
+  }
+
+  return i18nKeys[activeLocale][key] || i18nKeys[defaultLocale][key] || '';
 }

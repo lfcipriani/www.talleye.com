@@ -6,11 +6,12 @@ export default function Language({ lang, alternate, type, wrapper, locale }) {
   const router = useRouter();
   const activeLocale = locale || router.locale;
 
-  function langText(locale, useDefault = locale) {
+  function langText(langParam, strLang = null) {
+    strLang = strLang || langParam;
     return (
       <>
-        <img src={`/locales/${locale}.png`} width="16" height="12" aria-hidden="true" />{' '}
-        {i('langName', useDefault)[locale]}
+        <img src={`/locales/${langParam}.png`} width="16" height="12" aria-hidden="true" />{' '}
+        {i('langName', strLang)[langParam]}
         <style jsx>{`
           img {
             display: inline;
@@ -39,11 +40,11 @@ export default function Language({ lang, alternate, type, wrapper, locale }) {
     if (!alternate) {
       return null;
     } else {
-      text = <>{i('alsoAvailable')}</>;
+      text = <>{i('alsoAvailable', activeLocale)}</>;
     }
   } else {
     alternates.push(langText(lang, activeLocale));
-    text = <>{i('onlyAvailable')}</>;
+    text = <>{i('onlyAvailable', activeLocale)}</>;
   }
   if (alternate) {
     alternate.forEach((alt) => {
