@@ -19,6 +19,11 @@ export const i18nKeys = {
       </>
     ),
     min: 'min',
+    notFound: 'Page not found',
+    // eslint-disable-next-line react/display-name
+    notFoundText: (home) => (
+      <>You can return to the {home} to find other posts or you can watch me playing piano 😁.</>
+    ),
     onlyAvailable: 'Only available in',
     scrollToTop: 'Scroll to the top of the page',
     someTermsApply: 'Some terms apply',
@@ -46,6 +51,14 @@ export const i18nKeys = {
       </>
     ),
     min: 'min',
+    notFound: 'Página não encontrada',
+    // eslint-disable-next-line react/display-name
+    notFoundText: (home) => (
+      <>
+        Você poder retornar à {home} para ler outros posts ou você pode me assistir tocando piano
+        😁.
+      </>
+    ),
     onlyAvailable: 'Somente disponível em',
     scrollToTop: 'Vá para o topo da página',
     someTermsApply: 'Alguns direitos se aplicam',
