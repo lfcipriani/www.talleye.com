@@ -7,7 +7,7 @@ tags: tall eye, technology, computer science, software development
 image: /ogImage.jpg
 alternate:
   - lang: pt-BR
-    slug: sobre
+    slug: about
 ---
 
 <div class="float-right">

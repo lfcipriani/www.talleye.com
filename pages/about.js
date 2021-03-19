@@ -53,12 +53,11 @@ export default function About({ postData }) {
   );
 }
 
-export async function getStaticProps({ locale }) {
-  const slug = {
-    en: 'about',
-    'pt-BR': 'sobre',
-  };
-  const postData = await getContentData('', slug[locale]);
+export async function getStaticProps({ locale, defaultLocale }) {
+  const postData = await getContentData(
+    '',
+    'about' + (locale !== defaultLocale ? `-${locale}` : '')
+  );
   return {
     props: {
       postData,
