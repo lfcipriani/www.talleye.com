@@ -9,7 +9,9 @@ image: /img-posts/tfesp-fabric-advocacy.jpg
 
 From 2013 to 2015 I worked at Twitter as a developer advocate in the International developer relations team, presenting Twitter platforms to developers in Latin America and the rest of the world. One of these platforms was Fabric, a mobile platform with several solutions to speed up mobile development and that was later acquired by Google and merged with Firebase.
 
-![](/img-posts/tfesp-fabric-advocacy.jpg)
+![](/img-posts/tfesp-flock-seoul.jpg)
+
+_Twitter Flock event in Seoul, South Korea_
 
 Beyond [doing talks](https://www.infoq.com/br/presentations/fabric-na-pratica/) in several events, I also built some sample projects that were used as canonical examples of the platform or simply to show off the platform capabilities.
 
