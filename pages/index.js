@@ -62,7 +62,7 @@ export async function getStaticProps({ locale }) {
     fs.writeFileSync(path, rssFeed, 'utf8');
     console.log('Generated RSS feed.');
 
-    generateSitemap();
+    await generateSitemap();
     console.log('Generated sitemap.xml.');
   }
 
