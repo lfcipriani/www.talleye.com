@@ -43,15 +43,17 @@ export default function Language({ lang, alternate, type, wrapper, locale }) {
       text = <>{i('alsoAvailable', activeLocale)}</>;
     }
   } else {
-    alternates.push(langText(lang, activeLocale));
+    alternates.push(<span key={lang}>{langText(lang, activeLocale)}</span>);
     text = <>{i('onlyAvailable', activeLocale)}</>;
   }
   if (alternate) {
     alternate.forEach((alt) => {
       alternates.push(
-        <Link href={`${type ? `/${type}` : ''}/${alt.slug}`} locale={alt.lang}>
-          <a>{langText(alt.lang)}</a>
-        </Link>
+        <span key={alt.lang}>
+          <Link href={`${type ? `/${type}` : ''}/${alt.slug}`} locale={alt.lang}>
+            <a>{langText(alt.lang)}</a>
+          </Link>
+        </span>
       );
     });
   }
