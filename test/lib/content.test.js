@@ -43,6 +43,15 @@ describe('getAllContentSlugs', () => {
     expect(slugs[5].params.slug).toEqual('portuguese-post');
     expect(slugs[5].locale).toEqual('pt-BR');
   });
+
+  it('return slugs for all locales in case it is required via function parameters', () => {
+    const slugs = getAllContentSlugs('posts', ['en', 'pt-BR']);
+    expect(slugs).toHaveLength(18);
+    expect(slugs[0].params.slug).toEqual('another-md');
+    expect(slugs[0].locale).toEqual('en');
+    expect(slugs[1].params.slug).toEqual('another-md');
+    expect(slugs[1].locale).toEqual('pt-BR');
+  });
 });
 
 describe('getContentData', () => {

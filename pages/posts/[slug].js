@@ -85,8 +85,8 @@ export default function Post({ postData }) {
   );
 }
 
-export async function getStaticPaths() {
-  const paths = getAllContentSlugs(type);
+export async function getStaticPaths({ locales }) {
+  const paths = getAllContentSlugs(type, locales);
   return {
     paths,
     fallback: false,
