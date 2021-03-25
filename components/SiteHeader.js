@@ -7,7 +7,7 @@ export default function SiteHeader() {
   return (
     <>
       <header>
-        <Link href="/" locale="en">
+        <Link href="/">
           <a className="title" name="top">
             <span>{process.env.NEXT_PUBLIC_SITE_TITLE}</span>
           </a>
@@ -21,7 +21,7 @@ export default function SiteHeader() {
               <ThemeToggle size="20" />
             </li>
             <li>
-              <Link href="/about" locale="en">
+              <Link href="/about">
                 <a>{i('about')}</a>
               </Link>
             </li>

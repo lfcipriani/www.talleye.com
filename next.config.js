@@ -2,7 +2,7 @@ module.exports = {
   i18n: {
     locales: ['en', 'pt-BR'],
     defaultLocale: 'en',
-    localeDetection: false,
+    localeDetection: true,
   },
   redirects: async () => {
     // redirecting from lfcipriani.tumblr.com
