@@ -26,7 +26,15 @@ export const i18nKeys = {
     ),
     onlyAvailable: 'Only available in',
     scrollToTop: 'Scroll to the top of the page',
-    someTermsApply: 'Some terms apply',
+    someTermsApply: (
+      <a
+        href="https://creativecommons.org/licenses/by-nc/4.0/"
+        target="_blank"
+        rel="noreferrer nofollow"
+      >
+        Some terms apply
+      </a>
+    ),
     testEnKey: 'test',
     testFunctionKey: (age) => `I'm ${age} years old`,
     toggleToLightTheme: 'Toggle to light theme',
@@ -61,7 +69,15 @@ export const i18nKeys = {
     ),
     onlyAvailable: 'Somente disponível em',
     scrollToTop: 'Vá para o topo da página',
-    someTermsApply: 'Alguns direitos se aplicam',
+    someTermsApply: (
+      <a
+        href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR"
+        target="_blank"
+        rel="noreferrer nofollow"
+      >
+        Alguns direitos se aplicam
+      </a>
+    ),
     toggleToLightTheme: 'Mudar para o tema claro',
     toggleToDarkTheme: 'Mudar para o tema escuro',
   },

@@ -18,13 +18,7 @@ export default function SiteFooter() {
               <a>Luis Cipriani</a>
             </Link>
             <br />
-            <a
-              href="https://creativecommons.org/licenses/by-nc/4.0/"
-              target="_blank"
-              rel="noreferrer nofollow"
-            >
-              {i('someTermsApply')}
-            </a>
+            {i('someTermsApply')}
           </p>
         </div>
 
