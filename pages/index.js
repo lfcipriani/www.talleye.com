@@ -55,14 +55,15 @@ export default function Home({ allPostsData }) {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps(context) {
+  const locale = context.locale;
   if (process.env.NODE_ENV !== 'test') {
     const path = `${process.cwd()}/public/${type}-rss.xml`;
     const rssFeed = await generateRSS(type);
     fs.writeFileSync(path, rssFeed, 'utf8');
     console.log('Generated RSS feed.');
 
-    console.log(process.env);
+    console.log(context);
     await generateSitemap();
     console.log('Generated sitemap.xml.');
   }
