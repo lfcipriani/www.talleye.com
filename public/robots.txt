@@ -1,4 +1,4 @@
 User-Agent: *
-Allow: / 
+Disallow:
 
 Sitemap: https://www.talleye.com/sitemap.xml
