@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run ci && next build",
     "start": "next start",
-    "test": "jest --watch --silent",
+    "test": "jest --watch",
     "lint": "eslint .",
     "prettify": "prettier --write .",
     "ci": "npx prettier --check . && eslint . && jest --silent"
