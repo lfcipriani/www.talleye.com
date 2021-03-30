@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run ci && next build",
+    "build": "next build",
     "start": "next start",
     "test": "jest --watch",
     "lint": "eslint .",
