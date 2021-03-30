@@ -1,4 +1,5 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import Language from '../../components/Language';
 
 describe('locale and content language are equal', () => {
@@ -16,26 +17,20 @@ describe('locale and content language are equal', () => {
   });
 
   it('renders links to alternate content', () => {
-    var alternate = [{ lang: 'pt-BR', slug: 'slug' }];
-    render(<Language lang="en" alternate={alternate} type="posts" />);
-    element = screen.getByText(/Also available/);
-    expect(element).toBeInTheDocument();
-    var element = screen.getByText(/Português/);
-    expect(element).toBeInTheDocument();
+    const alternate = [{ lang: 'pt-BR', slug: 'slug' }];
+    const component = renderer.create(<Language lang="en" alternate={alternate} type="posts" />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it('renders links to 2 alternate contents', () => {
-    var alternate = [
+    const alternate = [
       { lang: 'pt-BR', slug: 'slug' },
       { lang: 'de', slug: 'slug' },
     ];
-    render(<Language lang="en" alternate={alternate} type="posts" />);
-    var element = screen.getByText(/Also available/);
-    expect(element).toBeInTheDocument();
-    element = screen.getByText(/Português/);
-    expect(element).toBeInTheDocument();
-    element = screen.getByText(/German/);
-    expect(element).toBeInTheDocument();
+    const component = renderer.create(<Language lang="en" alternate={alternate} type="posts" />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
 
@@ -49,45 +44,33 @@ describe('locale and content language are not equal', () => {
   });
 
   it('render warning without alternate content', () => {
-    render(<Language lang="en" />);
-    var element = screen.getByText(/Somente disponível/);
-    expect(element).toBeInTheDocument();
-    element = screen.getByText(/Inglês/);
-    expect(element).toBeInTheDocument();
+    const component = renderer.create(<Language lang="en" />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it('render warning and links to 1 alternate content', () => {
-    var alternate = [{ lang: 'pt-BR', slug: 'slug' }];
-    render(<Language lang="en" alternate={alternate} type="posts" />);
-    var element = screen.getByText(/Somente disponível/);
-    expect(element).toBeInTheDocument();
-    element = screen.getByText(/Inglês/);
-    expect(element).toBeInTheDocument();
-    element = screen.getByText(/Português/);
-    expect(element).toBeInTheDocument();
+    const alternate = [{ lang: 'pt-BR', slug: 'slug' }];
+    const component = renderer.create(<Language lang="en" alternate={alternate} type="posts" />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it('render warning and links to 2 alternate contents', () => {
-    var alternate = [
+    const alternate = [
       { lang: 'pt-BR', slug: 'slug' },
       { lang: 'de', slug: 'slug' },
     ];
-    render(<Language lang="en" alternate={alternate} type="posts" />);
-    var element = screen.getByText(/Somente disponível/);
-    expect(element).toBeInTheDocument();
-    element = screen.getByText(/Inglês/);
-    expect(element).toBeInTheDocument();
-    element = screen.getByText(/Português/);
-    expect(element).toBeInTheDocument();
-    element = screen.getByText(/Alemão/);
-    expect(element).toBeInTheDocument();
+    const component = renderer.create(<Language lang="en" alternate={alternate} type="posts" />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it('render with a wrapper', () => {
-    render(
+    const component = renderer.create(
       <Language lang="en" wrapper={(children) => <p data-testid="wrappertest">{children}</p>} />
     );
-    var element = screen.getByTestId(/wrappertest/);
-    expect(element).toBeInTheDocument();
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
