@@ -9,7 +9,7 @@ export default function FourOhFour() {
     <Layout>
       <Head>
         <title>{i('notFound')} - Tall Eye</title>
-        <title>{process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye</title>
+        <title>{i('siteTitle')} - Tall Eye</title>
         <meta name="og:title" content={i('notFound') + ' - Tall Eye'} key="title" />
         <meta name="robots" content="noindex"></meta>
       </Head>

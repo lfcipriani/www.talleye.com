@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import styles from './Layout.module.css';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
+import i from '../content/i18n';
 
 export default function Layout({ children }) {
   const router = useRouter();
@@ -24,19 +25,11 @@ export default function Layout({ children }) {
           type="font/woff2"
         />
         <link rel="icon" href="/favicon.ico" />
-        <title>{process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye</title>
-        <meta
-          name="og:title"
-          content={`${process.env.NEXT_PUBLIC_SITE_TITLE} - Tall Eye`}
-          key="title"
-        />
-        <meta name="description" content={process.env.NEXT_PUBLIC_SITE_DESCRIPTION} key="desc" />
-        <meta
-          name="og:description"
-          content={process.env.NEXT_PUBLIC_SITE_DESCRIPTION}
-          key="og-desc"
-        />
-        <meta name="author" content={process.env.NEXT_PUBLIC_SITE_TITLE} key="author" />
+        <title>{i('siteTitle')} - Tall Eye</title>
+        <meta name="og:title" content={`${i('siteTitle')} - Tall Eye`} key="title" />
+        <meta name="description" content={i('siteDescription')} key="desc" />
+        <meta name="og:description" content={i('siteDescription')} key="og-desc" />
+        <meta name="author" content={i('siteTitle')} key="author" />
         <meta
           name="og:url"
           content={`https://${process.env.NEXT_PUBLIC_SITE_DOMAIN}${

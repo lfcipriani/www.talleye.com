@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import styles from '../styles/About.module.css';
 import { getContentData } from '../lib/content';
 import { useRouter } from 'next/router';
+import i from '../content/i18n';
 
 export default function About({ postData }) {
   const router = useRouter();
@@ -10,13 +11,9 @@ export default function About({ postData }) {
     <Layout>
       <Head>
         <title>
-          {postData.title} - {process.env.NEXT_PUBLIC_SITE_TITLE}
+          {postData.title} - {i('siteTitle')}
         </title>
-        <meta
-          name="og:title"
-          content={`${postData.title} - ${process.env.NEXT_PUBLIC_SITE_TITLE}`}
-          key="title"
-        />
+        <meta name="og:title" content={`${postData.title} - ${i('siteTitle')}`} key="title" />
         <meta name="description" content={postData.description} key="desc" />
         <meta name="og:description" content={postData.description} key="og-desc" />
         <meta name="author" content={postData.author} key="author" />
