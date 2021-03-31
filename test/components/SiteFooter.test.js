@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import SiteHeader from '../../components/SiteHeader';
+import SiteFooter from '../../components/SiteFooter';
 
 beforeEach(() => {
   const useRouter = jest.spyOn(require('next/router'), 'useRouter');
@@ -9,9 +9,9 @@ beforeEach(() => {
   }));
 });
 
-describe('SiteHeader snapshot', () => {
-  it('renders Header', () => {
-    const component = renderer.create(<SiteHeader />);
+describe('SiteFooter snapshot', () => {
+  it('renders Footer', () => {
+    const component = renderer.create(<SiteFooter />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
