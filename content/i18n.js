@@ -6,6 +6,10 @@ export const i18nKeys = {
   // =============
   en: {
     langName: { en: 'English', 'pt-BR': 'Portuguese', de: 'German' },
+    siteTitle: 'Luis Cipriani',
+    siteDescription:
+      'My Personal website with projects and articles about technology and computer science.',
+    // From now on, in alphabetical order
     about: 'About',
     allPosts: 'All Posts',
     alsoAvailable: 'Also available in',
@@ -46,6 +50,10 @@ export const i18nKeys = {
   // ================
   'pt-BR': {
     langName: { en: 'Inglês', 'pt-BR': 'Português', de: 'Alemão' },
+    siteTitle: 'Luis Cipriani',
+    siteDescription:
+      'Meu site pessoal com projetos e artigos sobre tecnologia e ciência da computação.',
+    // From now on, in alphabetical order
     about: 'Sobre',
     allPosts: 'Posts',
     alsoAvailable: 'Também disponível em',
@@ -81,17 +89,19 @@ export const i18nKeys = {
 };
 
 export default function i18n(key, locale = null) {
-  const router = useRouter();
   var activeLocale = 'en';
   var defaultLocale = 'en';
 
   if (locale && i18nKeys[locale]) {
     activeLocale = locale;
-  } else if (router && router.locale && i18nKeys[router.locale]) {
-    activeLocale = router.locale;
-  }
-  if (router && router.defaultLocale && i18nKeys[router.defaultLocale]) {
-    defaultLocale = router.defaultLocale;
+  } else {
+    const router = useRouter();
+    if (router && router.locale && i18nKeys[router.locale]) {
+      activeLocale = router.locale;
+    }
+    if (router && router.defaultLocale && i18nKeys[router.defaultLocale]) {
+      defaultLocale = router.defaultLocale;
+    }
   }
 
   return i18nKeys[activeLocale][key] || i18nKeys[defaultLocale][key] || '';
