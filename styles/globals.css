@@ -99,6 +99,7 @@
   --color-icon-subheader: #040e19;
   --color-text-subheader: #040e19;
   --color-text-normal: #040e19;
+  --color-text-bold: #fff;
   --color-text-link: #004c80;
   --color-text-hover: #0067ac;
   --color-text-highlight: #3ddc97;
@@ -125,6 +126,7 @@
   --color-icon-subheader: #040e19;
   --color-text-subheader: #040e19;
   --color-text-normal: #eef0eb;
+  --color-text-bold: #575757;
   --color-text-link: #fff3b0;
   --color-text-hover: #ffd900;
   --color-text-highlight: #3ddc97;

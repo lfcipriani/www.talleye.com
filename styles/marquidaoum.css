@@ -41,6 +41,10 @@
 .marquidaoum p {
   font-size: 1.2rem;
 }
+.marquidaoum strong {
+  font-weight: 900;
+  background-color: var(--color-text-bold);
+}
 
 /* Lists */
 .marquidaoum ul,
