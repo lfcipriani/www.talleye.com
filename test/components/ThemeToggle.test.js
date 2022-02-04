@@ -24,20 +24,22 @@ test('renders the icon in the specified size', () => {
 });
 
 describe('ThemeToggle', () => {
-  beforeEach(() => {
+  it('renders light theme by default', () => {
     render(
       <ThemeProvider>
         <ThemeToggle />
       </ThemeProvider>
     );
-  });
-
-  it('renders light theme by default', () => {
     const icon = screen.getByText(/Toggle to dark theme/);
     expect(icon).toBeInTheDocument();
   });
 
   it('switches icon when link is clicked', () => {
+    render(
+      <ThemeProvider>
+        <ThemeToggle />
+      </ThemeProvider>
+    );
     var icon = screen.getByText(/Toggle to dark theme/);
     fireEvent.click(icon);
 
