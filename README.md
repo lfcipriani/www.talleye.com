@@ -28,6 +28,18 @@ Clone this repository, make sure to use Node.js `14.15.4` or greater. Then:
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Upgrading npm packages
+
+Install ncu:
+
+    > npm install -g npm-check-updates
+
+Run `ncu` regularly to check for npm package updates:
+
+- `ncu`: to check packages
+- `ncu -u`: to update all packages in `package.json`
+- `ncu -u PACKAGE_NAME`: to update a specific package only
+
 ## Testing
 
 To run unit tests:
