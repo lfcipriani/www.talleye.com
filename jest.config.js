@@ -36,7 +36,8 @@ module.exports = {
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
+  // Had to remove node_modules because we use a lot of ESModules in there that require transformation, blame remark
+  transformIgnorePatterns: ['^.+\\.module\\.(css|sass|scss)$'],
 
   testEnvironment: 'jsdom',
 };
