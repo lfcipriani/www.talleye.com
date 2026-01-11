@@ -15,14 +15,15 @@ alternate:
     <img src="/avatar.png" loading="lazy" alt="Minha selfie" width="300" />
 </div>
 
-Sou um brasileiro morando em Berlim com minha esposa e filho já há algum tempo. Trabalho com engenharia de software e gerência de engenharia por mais de 20 anos. Sou louco por construir produtos que são adorados pelos usuários e também por criar times de tecnologia de alta performance.
+Passei os últimos 20 anos trabalhando com desenvolvimento de software e aprendi que, seja em fitness, mídia, redes sociais ou logística, o segredo é sempre o mesmo: **pessoas excelentes constróem produtos excelentes**. Minha carreira me levou da **Abril Digital** ao **Twitter** e à **Rocket Internet**, permitindo que eu enfrentasse desafios técnicos em todos os níveis de escala e complexidade. Hoje, aplico essas lições como **CTO na BEAT81**, impulsionando a inovação na cena de fitness tech da Alemanha.
 
-Atualmente eu trabalho como CTO da Beat81, uma startup no mercado de fittech em Berlim. Anteriormente eu trabalhei no Twitter, Rocket Internet, Abril Digital e em startups em estágios iniciais até série B como engenheiro de software, desenvolvedor evangelista, gerente de produto ou gerente de engenharia.
+Nunca fui de ficar preso a um único caminho. Atuei como engenheiro de software, developer advocate e gerente de produto antes de migrar para a liderança executiva. Esse background multifuncional me ajuda a enxergar o todo, alinhando a arquitetura de sistemas com os objetivos de negócio. Fico à vontade tanto discutindo design de APIs quanto definindo um roadmap para uma expansão Series B.
 
-Também trabalhei em vários tipos de indústrias, tais como finanças, mídia, social, incubadoras, logística, fitness e esportes; também lidei com desafios técnicos em diferentes níveis de escala e complexidade.
+Na essência, **sou um construtor e um mentor**. Sou apaixonado por levar times do "caos de early-stage" a máquinas de alta performance, garantindo um crescimento significativo sem perder a nossa essência. Adoro o desafio de escalar operações e produtos, mas minha maior satisfação vem de ver os times terem **sucesso e de entregar software que faz uma diferença real na vida dos usuários**.
 
 Além desse site, você também pode encontrar coisas sobre mim e meus interesses nos seguintes lugares:
 
 - [Github](https://github.com/lfcipriani)
-- [Twitter](https://twitter.com/lfcipriani)
 - [Linkedin](https://www.linkedin.com/in/luiscipriani/)
+- [Twitter](https://twitter.com/lfcipriani)
+- Se você mora em Berlim, podemos fazer um workout juntos na [BEAT81](https://www.beat81.com)

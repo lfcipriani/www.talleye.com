@@ -15,11 +15,12 @@ export const i18nKeys = {
     alsoAvailable: 'Also available in',
     aWebsiteBy: 'a website by',
     // eslint-disable-next-line react/display-name
-    bioShortText: (name, work) => (
+    bioShortText: (work) => (
       <>
-        I'm {name}, software engineer and engineering manager. This website is a collection of some
-        projects I built or articles I wrote about technology and software dev. I also work as CTO
-        at {work}.
+        Hi! I help engineering teams move from chaos to clarity. Working with scaling tech companies
+        to align product and engineering, mentor teams to own outcomes, and eliminate the friction
+        that slows everyone down. Currently CTO at {work}. Here you'll find projects I've built and
+        thoughts on technology and engineering leadership.
       </>
     ),
     min: 'min',
@@ -59,11 +60,13 @@ export const i18nKeys = {
     alsoAvailable: 'Também disponível em',
     aWebsiteBy: 'um site criado por',
     // eslint-disable-next-line react/display-name
-    bioShortText: (name, work) => (
+    bioShortText: (work) => (
       <>
-        Sou {name}, engenheiro de software e gerente de engenharia. Esse site é uma coleção de
-        projetos que eu fiz ou artigos que escrevi sobre tecnologia ou desenvolvimento de software.
-        Eu também sou CTO da {work}.
+        Olá! Eu ajudo times de engenharia a transformar caos em clareza. Trabalho com empresas de
+        tecnologia em crescimento para alinhar produto e engenharia, mentorar times para que assumam
+        responsabilidade pelos resultados, e eliminar os atritos que travam a operação. Atualmente
+        CTO na {work}. Aqui você encontra projetos que construí e reflexões sobre tecnologia e
+        liderança em engenharia.
       </>
     ),
     min: 'min',
