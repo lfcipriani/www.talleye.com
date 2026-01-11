@@ -12,7 +12,7 @@ alternate:
 ---
 
 <div class="float-right">
-    <img src="/avatar.png" width="300" height="375" loading="lazy" alt="Cartoonish me" />
+    <img src="/avatar.png" loading="lazy" alt="Minha selfie" width="300" />
 </div>
 
 Sou um brasileiro morando em Berlim com minha esposa e filho já há algum tempo. Trabalho com engenharia de software e gerência de engenharia por mais de 20 anos. Sou louco por construir produtos que são adorados pelos usuários e também por criar times de tecnologia de alta performance.

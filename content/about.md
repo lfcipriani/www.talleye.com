@@ -11,7 +11,7 @@ alternate:
 ---
 
 <div class="float-right">
-    <img src="/avatar.png" width="300" height="375" loading="lazy" alt="Cartoonish me" />
+    <img src="/avatar.png" loading="lazy" alt="My selfie" width="300" />
 </div>
 
 I'm a Brazilian living in Berlin for a while now and a happy parent and husband. Working in software development and engineering management for more more than 20 years. I'm passionate about building products that are loved by customers and creating high performance tech teams.

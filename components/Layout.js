@@ -25,7 +25,7 @@ export default function Layout({ children }) {
           type="font/woff2"
         />
         <link rel="icon" href="/favicon.ico" />
-        <title>{i('siteTitle')} - Tall Eye</title>
+        <title>{`${i('siteTitle')} - Tall Eye`}</title>
         <meta name="og:title" content={`${i('siteTitle')} - Tall Eye`} key="title" />
         <meta name="description" content={i('siteDescription')} key="desc" />
         <meta name="og:description" content={i('siteDescription')} key="og-desc" />

@@ -8,8 +8,7 @@ export default function FourOhFour() {
   return (
     <Layout>
       <Head>
-        <title>{i('notFound')} - Tall Eye</title>
-        <title>{i('siteTitle')} - Tall Eye</title>
+        <title>{`${i('notFound')} - Tall Eye`}</title>
         <meta name="og:title" content={i('notFound') + ' - Tall Eye'} key="title" />
         <meta name="robots" content="noindex"></meta>
       </Head>

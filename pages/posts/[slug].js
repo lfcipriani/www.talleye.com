@@ -15,9 +15,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>
-          {postData.title} - {i('siteTitle')}
-        </title>
+        <title>{`${postData.title} - ${i('siteTitle')}`}</title>
         <meta name="og:title" content={`${postData.title} - ${i('siteTitle')}`} key="title" />
         <meta name="description" content={postData.description} key="desc" />
         <meta name="og:description" content={postData.description} key="og-desc" />
