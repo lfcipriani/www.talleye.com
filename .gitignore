@@ -78,3 +78,6 @@ typings/
 # talleye.com
 /public/*.xml
 /public/*.xml.gz
+
+# Claude Code
+.claude/
