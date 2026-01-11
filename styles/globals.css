@@ -2,7 +2,10 @@
 @font-face {
   font-family: 'Lora';
   src: url('/fonts/Lora-Bold.woff2');
-  src: local('Lora Bold'), local('Lora-RegBoldular'), url('/fonts/Lora-Bold.woff2') format('woff2'),
+  src:
+    local('Lora Bold'),
+    local('Lora-RegBoldular'),
+    url('/fonts/Lora-Bold.woff2') format('woff2'),
     url('/fonts/Lora-Bold.woff') format('woff'),
     url('/fonts/Lora-Bold.eot?#iefix') format('embedded-opentype'),
     url('/fonts/Lora-Bold.ttf') format('truetype');
@@ -13,7 +16,9 @@
 @font-face {
   font-family: 'Source Sans Pro';
   src: url('/fonts/SourceSansPro-Regular.woff2');
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+  src:
+    local('Source Sans Pro Regular'),
+    local('SourceSansPro-Regular'),
     url('/fonts/SourceSansPro-Regular.woff2') format('woff2'),
     url('/fonts/SourceSansPro-Regular.woff') format('woff'),
     url('/fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
@@ -53,8 +58,9 @@
 
   /* Fonts */
   --font-family-heading: Lora, 'Times New Roman', Times, serif;
-  --font-family-normal: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-family-normal:
+    'Source Sans Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-family-code: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 

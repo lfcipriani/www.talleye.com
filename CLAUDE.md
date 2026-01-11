@@ -9,12 +9,14 @@ This is a personal website built with Next.js that serves blog posts written in 
 ## Development Commands
 
 ### Setup
+
 ```bash
 npm install
 npm run dev  # Start development server at http://localhost:3000
 ```
 
 ### Testing
+
 ```bash
 npm test              # Run tests in watch mode
 npm run ci            # Run prettier, linter, and tests (for CI)
@@ -23,6 +25,7 @@ npm run ci            # Run prettier, linter, and tests (for CI)
 Note: Tests use test fixtures in `test/content/posts/` directory, not the actual content.
 
 ### Building & Linting
+
 ```bash
 npm run build         # Build production bundle
 npm run lint          # Run ESLint
@@ -30,6 +33,7 @@ npm run prettify      # Format code with Prettier
 ```
 
 ### Running a Single Test
+
 ```bash
 npx jest test/lib/content.test.js           # Run specific test file
 npx jest -t "test name pattern"             # Run tests matching pattern
@@ -49,6 +53,7 @@ The content system is the core of this site, handling Markdown posts with frontm
 - `getContentData(type, slug, options)` - Processes markdown to HTML using remark/rehype pipeline
 
 **Content processing pipeline:**
+
 1. Read markdown files from `content/posts/`
 2. Parse frontmatter with `gray-matter`
 3. Calculate reading time
@@ -57,6 +62,7 @@ The content system is the core of this site, handling Markdown posts with frontm
 6. Generate final HTML string
 
 **Frontmatter fields:**
+
 - `title`, `description`, `datePublished`, `author`, `tags`, `image`
 - `lang` (defaults to 'en' if not specified)
 - `alternate` (array of objects with `slug` and `lang` for translations)
@@ -82,6 +88,7 @@ Pages are pre-generated at build time using Next.js SSG.
 ### Environment Variables
 
 Required in `.env`:
+
 - `CONTENT_FOLDER` - Path to content directory (default: `content`)
 - `NEXT_PUBLIC_SITE_DOMAIN` - Site domain for absolute URLs in RSS/sitemap
 
@@ -109,5 +116,4 @@ The site deploys automatically to Vercel when code is pushed to the `main` branc
 
 ## Node Version
 
-Use Node.js 14.15.4 or greater (check `.tool-versions` or README for current requirement).
-
+Use Node.js 20.18.2 (specified in `.tool-versions`).

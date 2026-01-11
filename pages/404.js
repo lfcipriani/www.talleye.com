@@ -23,7 +23,7 @@ export default function FourOhFour() {
               i('notFoundText')(
                 <>
                   <Link href="/" locale="en">
-                    <a>home page</a>
+                    home page
                   </Link>
                 </>
               )}

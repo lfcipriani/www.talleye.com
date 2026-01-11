@@ -22,7 +22,7 @@ export default class ThemeProvider extends React.Component {
   componentDidMount() {
     this.darkModeMatcher = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
     if (this.darkModeMatcher) {
-      this.darkModeMatcher.addListener(this.mediaQueryThemeChanged);
+      this.darkModeMatcher.addEventListener('change', this.mediaQueryThemeChanged);
 
       this.setState(() => ({
         theme: this.isDarkMode() ? 'dark' : 'light',
@@ -32,7 +32,7 @@ export default class ThemeProvider extends React.Component {
 
   componentWillUnmount() {
     if (this.darkModeMatcher) {
-      this.darkModeMatcher.removeListener(this.mediaQueryThemeChanged);
+      this.darkModeMatcher.removeEventListener('change', this.mediaQueryThemeChanged);
     }
   }
 

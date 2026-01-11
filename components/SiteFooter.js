@@ -10,13 +10,8 @@ export default function SiteFooter() {
       <footer>
         <div>
           <p>
-            <Link href="/">
-              <a>Tall Eye</a>
-            </Link>
-            , {i('aWebsiteBy')}{' '}
-            <Link href="/about">
-              <a>Luis Cipriani</a>
-            </Link>
+            <Link href="/">Tall Eye</Link>, {i('aWebsiteBy')}{' '}
+            <Link href="/about">Luis Cipriani</Link>
             <br />
             {i('someTermsApply')}
           </p>

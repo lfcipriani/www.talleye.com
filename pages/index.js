@@ -17,12 +17,8 @@ export default function Home({ allPostsData }) {
         <p className={styles.bioText}>
           {i('bioShortText')
             ? i('bioShortText')(
-                <Link href="https://twitter.com/lfcipriani">
-                  <a>Luis Cipriani</a>
-                </Link>,
-                <Link href="https://www.beat81.com">
-                  <a>Beat81</a>
-                </Link>
+                <Link href="https://twitter.com/lfcipriani">Luis Cipriani</Link>,
+                <Link href="https://www.beat81.com">Beat81</Link>
               )
             : ''}
         </p>
@@ -35,10 +31,12 @@ export default function Home({ allPostsData }) {
             <ul>
               {allPostsData[yearMonth].map(({ slug, title, description, lang, alternate }) => (
                 <li key={slug}>
-                  <Link href={`/${allPostsData.type}/${slug}`} locale={lang}>
-                    <a className={styles.articleTitle}>
-                      <h3>{title}</h3>
-                    </a>
+                  <Link
+                    href={`/${allPostsData.type}/${slug}`}
+                    locale={lang}
+                    className={styles.articleTitle}
+                  >
+                    <h3>{title}</h3>
                   </Link>
                   <p className={styles.articleDescription}>
                     {description}

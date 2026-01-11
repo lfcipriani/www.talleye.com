@@ -33,6 +33,8 @@
     // needed for NextJS's jsx without react import
     "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": 0,
+    // styled-jsx uses jsx attribute
+    "react/no-unknown-property": ["error", { "ignore": ["jsx", "global"] }],
     // jest rules
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",

@@ -51,7 +51,7 @@ export default function Language({ lang, alternate, type, wrapper, locale }) {
       alternates.push(
         <span key={alt.lang}>
           <Link href={`${type ? `/${type}` : ''}/${alt.slug}`} locale={alt.lang}>
-            <a>{langText(alt.lang)}</a>
+            {langText(alt.lang)}
           </Link>
         </span>
       );

@@ -2,7 +2,7 @@ module.exports = {
   i18n: {
     locales: ['en', 'pt-BR'],
     defaultLocale: 'en',
-    localeDetection: true,
+    localeDetection: false,
   },
   redirects: async () => {
     // redirecting from lfcipriani.tumblr.com
@@ -49,5 +49,4 @@ module.exports = {
       },
     ];
   },
-  webpack5: true,
 };
