@@ -14,7 +14,7 @@ alternate:
     <img src="/avatar.png" loading="lazy" alt="My selfie" width="300" />
 </div>
 
-I’ve spent the last 20+ years working in software development, and I’ve learned that whether you are in fitness, media, social network or logistics, the secret sauce is always the same: **great people building great products**. My career has taken me from **Abril Digital** to **Twitter** and **Rocket Internet**, allowing me to tackle technical challenges at every level of scale and complexity. Today, I’m applying those lessons as the **CTO at BEAT81**, driving innovation in the Germany's fitness tech scene.
+I’ve spent the last 20+ years working in software development, and I’ve learned that whether you are in fitness, media, social networks, logistics, or developer infrastructure, the secret sauce is always the same: **great people building great products**. Previously worked at **Twitter**, [**BEAT81**](https://www.beat81.com), **Abril Digital**, **Rocket Internet**, which allowed me to tackle technical challenges at every level of scale and complexity. Today, I’m applying those lessons as **CPTO at [ScraperAPI](https://www.scraperapi.com)**, helping scale the product, platform, and organization behind a company built for customers looking for high quality and available data to drive their decisions.
 
 I’ve never been one to stick to a single lane. I’ve operated as a software engineer, a developer advocate and a product manager before moving into executive leadership. This cross-functional background helps me see the big picture, aligning systems architecture with business goals. I’m just as comfortable discussing API design as I am defining a roadmap for a Series B expansion.
 
@@ -25,4 +25,4 @@ Beyond this website, you can find stuff more about me and my interests in the fo
 - [Github](https://github.com/lfcipriani)
 - [Linkedin](https://www.linkedin.com/in/luiscipriani/)
 - [Twitter](https://twitter.com/lfcipriani)
-- Let's do a workout together at [BEAT81](https://www.beat81.com)
+- If you're building products for developers, I'd be happy to compare notes

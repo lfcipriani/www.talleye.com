@@ -19,7 +19,7 @@ export const i18nKeys = {
       <>
         Hi! I help engineering teams move from chaos to clarity. Working with scaling tech companies
         to align product and engineering, mentor teams to own outcomes, and eliminate the friction
-        that slows everyone down. Currently CTO at {work}. Here you'll find projects I've built and
+        that slows everyone down. Currently CPTO at {work}. Here you'll find projects I've built and
         thoughts on technology and engineering leadership.
       </>
     ),
@@ -65,7 +65,7 @@ export const i18nKeys = {
         Olá! Eu ajudo times de engenharia a transformar caos em clareza. Trabalho com empresas de
         tecnologia em crescimento para alinhar produto e engenharia, mentorar times para que assumam
         responsabilidade pelos resultados, e eliminar os atritos que travam a operação. Atualmente
-        CTO na {work}. Aqui você encontra projetos que construí e reflexões sobre tecnologia e
+        sou CPTO na {work}. Aqui você encontra projetos que construí e reflexões sobre tecnologia e
         liderança em engenharia.
       </>
     ),

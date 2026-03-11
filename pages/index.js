@@ -16,7 +16,7 @@ export default function Home({ allPostsData }) {
       <blockquote>
         <p className={styles.bioText}>
           {i('bioShortText')
-            ? i('bioShortText')(<Link href="https://www.beat81.com">BEAT81</Link>)
+            ? i('bioShortText')(<Link href="https://www.scraperapi.com">ScraperAPI</Link>)
             : ''}
         </p>
       </blockquote>
