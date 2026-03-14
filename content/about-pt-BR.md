@@ -26,4 +26,3 @@ Além desse site, você também pode encontrar coisas sobre mim e meus interesse
 - [Github](https://github.com/lfcipriani)
 - [Linkedin](https://www.linkedin.com/in/luiscipriani/)
 - [Twitter](https://twitter.com/lfcipriani)
-- Se você também constrói produtos para desenvolvedores, vai ser um prazer trocar ideias

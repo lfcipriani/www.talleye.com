@@ -25,4 +25,3 @@ Beyond this website, you can find stuff more about me and my interests in the fo
 - [Github](https://github.com/lfcipriani)
 - [Linkedin](https://www.linkedin.com/in/luiscipriani/)
 - [Twitter](https://twitter.com/lfcipriani)
-- If you're building products for developers, I'd be happy to compare notes
