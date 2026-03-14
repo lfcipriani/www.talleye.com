@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Language from '../components/Language';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
+import ScrollProgressBar from '../components/ScrollProgressBar';
 import { getGroupedContentMetadata } from '../lib/content';
 import { generateRSS } from '../lib/rssGen';
 import { generateSitemap } from '../lib/sitemap';
@@ -13,6 +14,7 @@ const type = 'posts';
 export default function Home({ allPostsData }) {
   return (
     <Layout>
+      <ScrollProgressBar />
       <blockquote>
         <p className={styles.bioText}>
           {i('bioShortText')

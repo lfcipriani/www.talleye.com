@@ -4,6 +4,7 @@ import Date from '../../components/Date';
 import ReadingTime from '../../components/ReadingTime';
 import Language from '../../components/Language';
 import styles from '../../styles/Post.module.css';
+import ScrollProgressBar from '../../components/ScrollProgressBar';
 import { getAllContentSlugs, getContentData } from '../../lib/content';
 import { useRouter } from 'next/router';
 import i from '../../content/i18n';
@@ -14,6 +15,7 @@ export default function Post({ postData }) {
   const router = useRouter();
   return (
     <Layout>
+      <ScrollProgressBar />
       <Head>
         <title>{`${postData.title} - ${i('siteTitle')}`}</title>
         <meta name="og:title" content={`${postData.title} - ${i('siteTitle')}`} key="title" />
