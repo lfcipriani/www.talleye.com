@@ -15,11 +15,11 @@ As a CTO, the amount of topics that I need to pay attention to is always overwhe
 I've always liked the radar visual because it conveys priority in such a quick way to understand: blips close to the center indicate objects that are closer to you. Furthermore, it allows you to not lose sight from distant objects as well. They might not be a threat at the moment, but will be if they get closer.
 
 ![](/img-posts/or-sailor-radar.jpg)
-*Sailor, Us navy, Radar technician image. Free for use.*
+_Sailor, Us navy, Radar technician image. Free for use._
 
 The analogy maps naturally to knowledge work: just replace threats with topics and directions with categories and you have a great focus tool. All it takes is a quick glance at the radar and you have a complete picture of what you should be focusing on and what might become a priority one day. Nothing new or fancy, but very useful. Maybe the most famous radar example in the tech world is the [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar), that uses the same logic but applied to adoption of best practices and tools.
 
-I used to build these radars using diagramming tools or directly on whiteboards using post-its, for example, my new-year resolution notes are all called "Radar 202x" because they follow that prioritization structure, but I wanted a way to build them but keep the connection between radar blips and the data that describe them. Since I'm using [Obsidian](https://obsidian.md/) for more than 6 years, I've decided to write a plugin to build radars using my notes. 
+I used to build these radars using diagramming tools or directly on whiteboards using post-its, for example, my new-year resolution notes are all called "Radar 202x" because they follow that prioritization structure, but I wanted a way to build them but keep the connection between radar blips and the data that describe them. Since I'm using [Obsidian](https://obsidian.md/) for more than 6 years, I've decided to write a plugin to build radars using my notes.
 
 Meet Obsidian Radar:
 

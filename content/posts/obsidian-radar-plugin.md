@@ -16,7 +16,7 @@ Como CTO, a quantidade de tópicos que preciso prestar atenção é sempre demai
 Sempre gostei do visual de um radar porque ele transmite prioridade de uma forma muito rápida de entender: blips próximos ao centro indicam objetos mais perto de você. Além disso, ele permite que você não perca de vista os objetos distantes também. Eles podem não ser uma ameaça no momento, mas serão se chegarem mais perto de você.
 
 ![](/img-posts/or-sailor-radar.jpg)
-*Sailor, Us navy, Radar technician image. Free for use.*
+_Sailor, Us navy, Radar technician image. Free for use._
 
 A analogia se aplica naturalmente ao gerenciamento de foco: basta substituir ameaças por tópicos e direções por categorias, e você tem uma ótima ferramenta de foco. Basta uma rápida olhada no radar e você tem um panorama completo do que deveria estar focando e do que pode se tornar uma prioridade um dia. Nada de novo ou sofisticado, mas muito útil. Talvez o exemplo de radar mais famoso no mundo da tecnologia seja o [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar), que usa a mesma lógica, mas aplicada à adoção de boas práticas e ferramentas.
 
