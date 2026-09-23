@@ -21,7 +21,7 @@ Built with:
 
 ## Development Setup
 
-Clone this repository, make sure to use Node.js `20.18.2` or greater. Then:
+Clone this repository, make sure to use Node.js `24.21.0` or greater. Then:
 
     > npm install
     > npm run dev

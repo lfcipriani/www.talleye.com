@@ -116,4 +116,4 @@ The site deploys automatically to Vercel when code is pushed to the `main` branc
 
 ## Node Version
 
-Use Node.js 20.18.2 (specified in `.tool-versions`).
+Use Node.js 24.21.0 (specified in `.tool-versions`).
